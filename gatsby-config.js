@@ -3,9 +3,9 @@ module.exports = {
     title: `coinmoon.xyz`,
     author: {
       name: `코인문`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: ``,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: ``,
     siteUrl: `https://coinmoon.xyz/`,
     social: {
       twitter: ``,

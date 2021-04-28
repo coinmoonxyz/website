@@ -88,6 +88,10 @@ footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
+footer p {
+  margin: var(--spacing-2) 0;
+}
+
 hr {
   background: var(--color-accent);
   height: 1px;
@@ -125,7 +129,8 @@ h1 {
 }
 
 h2 {
-  font-size: var(--fontSize-5);
+  font-size: var(--fontSize-3);
+  line-height: 1.4;
 }
 
 h3 {
