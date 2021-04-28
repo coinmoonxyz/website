@@ -1,8 +1,9 @@
 import React from "react"
+import { css, jsx } from "@emotion/react"
 
 const Footer = props => {
   return (
-    <footer style={{ fontSize: "13px", color: '#666' }}>
+    <footer style={{ fontSize: "13px", color: "#666" }}>
       <p>© {new Date().getFullYear()}, coinmoon.xyz</p>
       <p>
         Disclaimer: This website is for entertainment purpose only. The owner
@@ -21,11 +22,11 @@ const Footer = props => {
       <p>
         Advertisement Disclaimer: The links on this website may contain
         referral/affiliate links. If you purchase products or services through
-        the links, the owner of the website gets a small portion.
+        the links, the owner of the website gets a small reward.
       </p>
       <p>
         광고 공지: 본 웹사이트의 링크는 리퍼럴 링크를 포함합니다. 방문자가 이
-        링크를 통해 제품이나 서비스를 구매 시, 운영자는 약간의 커미션을
+        링크를 통해 제품이나 서비스를 구매 시, 운영자는 약간의 리워드를
         받습니다.
       </p>
     </footer>
