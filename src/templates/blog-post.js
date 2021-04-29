@@ -30,11 +30,11 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
         <div className="kofi" style={{ textAlign: "center" }}>
           <p style={{marginBottom: "1rem"}}>블로그의 내용이 재미있으셨다면, 커피 한 잔 사주시면 잘 마시겠습니다~</p>
-          <a href="https://ko-fi.com/V7V74G7ID" target="_blank">
+          <a href="https://ko-fi.com/V7V74G7ID" target="_blank" rel="noreferrer">
             <img
               height="36"
               style={{ border: 0, height: 36 }}
-              src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2"
+              src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
               border="0"
               alt="Buy Me a Coffee at ko-fi.com"
             />

@@ -42,7 +42,14 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 630,
+              maxWidth: 800,
+              showCaptions: true,
+            },
+          },
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {
+              figureClassName: "md-figure",
             },
           },
           {
