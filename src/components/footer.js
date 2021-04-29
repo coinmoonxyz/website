@@ -6,6 +6,14 @@ const Footer = props => {
     <footer style={{ fontSize: "13px", color: "#666" }}>
       <p>© {new Date().getFullYear()}, coinmoon.xyz</p>
       <p>
+        <a
+          href="https://www.privacypolicygenerator.info/live.php?token=9CiSLR52wnUDteo2kXQlNPQ98DCRHl9T"
+          style={{ color: "#666" }}
+        >
+          Our Privacy Policy
+        </a>
+      </p>
+      <p>
         Disclaimer: This website is for entertainment purpose only. The owner
         and writers of the website are not financial advisors, and no
         information on this website should be considered investment advice or
