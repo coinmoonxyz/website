@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
       {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
+          const title = post.frontmatter.title
 
           return (
             <li key={post.fields.slug}>
@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url">
+                    <Link to={post.frontmatter.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
@@ -60,12 +60,13 @@ export const pageQuery = graphql`
       nodes {
         excerpt
         fields {
-          slug
+          slug_old
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          slug
         }
       }
     }

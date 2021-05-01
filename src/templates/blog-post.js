@@ -37,7 +37,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
         <div className="kofi" style={{ textAlign: "center" }}>
           <p style={{ marginBottom: "1rem" }}>
-            블로그의 내용이 재미있으셨다면, 커피 한 잔 사주시면 잘 마시겠습니다~
+            블로그 후원은 아래 링크를 통해서 가능합니다. 감사합니다!
           </p>
           <a
             href="https://ko-fi.com/V7V74G7ID"
@@ -67,14 +67,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.frontmatter.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.frontmatter.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -114,6 +114,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        slug
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -122,6 +123,7 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
+        slug
       }
     }
   }

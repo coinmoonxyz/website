@@ -17,8 +17,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         ) {
           nodes {
             id
-            fields {
+            frontmatter {
               slug
+            }
+            fields {
+              slug_old
             }
           }
         }
@@ -46,7 +49,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        path: post.fields.slug,
+        // path: post.fields.slug,
+        path: post.frontmatter.slug,
         component: blogPost,
         context: {
           id: post.id,
@@ -65,7 +69,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     const value = createFilePath({ node, getNode })
 
     createNodeField({
-      name: `slug`,
+      name: `slug_old`,
       node,
       value,
     })
