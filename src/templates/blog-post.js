@@ -21,7 +21,14 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p
+            className="description"
+            dangerouslySetInnerHTML={{
+              __html: post.frontmatter.description,
+            }}
+            itemProp="description"
+          />
+          <p className="date">{post.frontmatter.date}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -29,8 +36,14 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <div className="kofi" style={{ textAlign: "center" }}>
-          <p style={{marginBottom: "1rem"}}>블로그의 내용이 재미있으셨다면, 커피 한 잔 사주시면 잘 마시겠습니다~</p>
-          <a href="https://ko-fi.com/V7V74G7ID" target="_blank" rel="noreferrer">
+          <p style={{ marginBottom: "1rem" }}>
+            블로그의 내용이 재미있으셨다면, 커피 한 잔 사주시면 잘 마시겠습니다~
+          </p>
+          <a
+            href="https://ko-fi.com/V7V74G7ID"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               height="36"
               style={{ border: 0, height: 36 }}

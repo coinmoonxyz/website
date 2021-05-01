@@ -278,6 +278,7 @@ a:focus {
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-extrabold);
   color: var(--color-black);
   margin-bottom: var(--spacing-0);
   margin-top: var(--spacing-0);
@@ -310,12 +311,24 @@ a:focus {
   border-radius: 100%;
 }
 
-.blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+.blog-post header {
+  margin-bottom: var(--spacing-16);
 }
 
-.blog-post header p {
+.blog-post header h1 {
+  font-size: var(--fontSize-5);
+  font-weight: var(--fontWeight-extrabold);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-3) var(--spacing-0);
+}
+
+.blog-post header .description {
   font-size: var(--fontSize-2);
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-3);
+}
+
+.blog-post header .date {
+  font-size: var(--fontSize-1);
   font-family: var(--font-heading);
 }
 
