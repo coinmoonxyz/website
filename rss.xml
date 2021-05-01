@@ -1,4 +1,185 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[coinmoon.xyz]]></title><description><![CDATA[coinmoon.xyz]]></description><link>https://coinmoon.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 May 2021 18:52:06 GMT</lastBuildDate><item><title><![CDATA[코인베이스에서 공짜로 코인 리워드받기]]></title><description><![CDATA[…]]></description><link>https://coinmoon.xyz/coinbase-rewards/</link><guid isPermaLink="false">https://coinmoon.xyz/coinbase-rewards/</guid><pubDate>Fri, 30 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;저는 개인적으로 제미나이를 더 우선으로 사용하지만 거래 가능한 코인들이 거래소마다 달라서 코인베이스 계정도 가지고 있는데요. 사실은 저도 코인 입문은 코인베이스로 했습니다.^^ 코인베이스로 입문시에 좋은 것 중 하나는 바로 무료로 코인들을 받을 수 있다는 것인데요. &lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[coinmoon.xyz]]></title><description><![CDATA[coinmoon.xyz]]></description><link>https://coinmoon.xyz</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 01 May 2021 20:27:15 GMT</lastBuildDate><item><title><![CDATA[Brave 브라우저 소개]]></title><description><![CDATA[Brave 라는 브라우저 들어보셨나요? 개인정보 보호와 성능에도 굉장히 신경쓰고, 토큰 경제를 사용해서 광고를 보는 사용자들(바로 우리들)에게 일부 광고 수익을 $BAT…]]></description><link>https://coinmoon.xyznull</link><guid isPermaLink="false">https://coinmoon.xyznull</guid><pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Brave 라는 브라우저 들어보셨나요? 개인정보 보호와 성능에도 굉장히 신경쓰고, 토큰 경제를 사용해서 광고를 보는 사용자들(바로 우리들)에게 일부 광고 수익을 $BAT 코인으로 돌려주는 브라우저입니다. 제가 두어달 정도 써보니까 정말 편해서 이제는 주력으로 사용하고 있는 브라우저에요. 간단하게 소개해볼게요.&lt;/p&gt;
+&lt;p&gt;요즘 온라인 개인정보 보호 문제로 말들이 많습니다. 애플은 사용자 트래킹을 막는 업데이트를 얼마 전에 내놓았고, 사용자 트래킹을 해야만 광고를 달고 수익을 얻을 수 있는 페이스북과 마찰이 많은 상황이지요. 사실, 웹서핑을 하고 있으면 쿠키 파일들이 우리 컴퓨터 상에 남아서 온라인 활동 내역을 계속해서 트래킹하고 있지요. 아무리 특정인을 지목할 수 없는 수준이라고 하지만, 여러 활동 내역을 합쳐보면 개인정보 침해의 우려가 있고, 누군가에게 항상 감시받는 듯한 느낌이라 찜찜한 것이 사실입니다. &lt;/p&gt;
+&lt;p&gt;브레이브 브라우저는 원래 개인정보 보호 쪽에서 높은 점수를 받고 있는 파이어폭스의 창업자가 새로 만든 브라우저입니다. 아래 이미지에서 소개하고 있는 것처럼 파이어폭스보다 더 높은 수준의 개인정보 보호를 기본적으로 탑재하고 있구요, 웹사이트마다 따라다니는 트래커들을 자동으로 차단해줌으로써 웹사이트의 속도, 성능 개선도 같이 이루어집니다. 처음에는 굳이 웹브라우저를 왜 바꾸나, 또 코인을 빌미로 광고하는구나 싶었지만, 파이어폭스 창업자 &lt;a href=&quot;https://en.wikipedia.org/wiki/Brendan_Eich&quot;&gt;Brendan Eich&lt;/a&gt;가 만든 프로젝트라는 얘기를 듣고 믿고 사용하게 됐어요. 이 분은 무려 자바스크립트 컴퓨터 언어를 만든 사람이기도 합니다. 브레이브는 오픈 소스 크롬 엔진을 기반으로 하고 있어서 크롬을 사용하셨던 분들은 따로 적응할 것 없이 편하게 사용하실 수 있습니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d527a163671d3c7ddc430b4942eb1374/940ce/1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwT/2gAMAwEAAhADEAAAAYe6liRhNf8A/8QAGRAAAwADAAAAAAAAAAAAAAAAAAIREjIz/9oACAEBAAEFAqZFonN9T//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIT/9oACAEDAQE/AekMuo//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BNX//xAAXEAADAQAAAAAAAAAAAAAAAAAAIDGh/9oACAEBAAY/AiYv/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERITFBcYH/2gAIAQEAAT8hUHifBpoJ2clkEtwVJH//2gAMAwEAAgADAAAAEO8//8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EBrAmFv/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QoV//xAAcEAEAAwACAwAAAAAAAAAAAAABABEhMUFhgaH/2gAIAQEAAT8QsPpaAKb3wlpRL2uzIQxKw8wOE1wgif/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;브레이브 브라우저 소개 페이지&quot;
+        title=&quot;브레이브 브라우저 소개 페이지&quot;
+        src=&quot;/static/d527a163671d3c7ddc430b4942eb1374/4b190/1.jpg&quot;
+        srcset=&quot;/static/d527a163671d3c7ddc430b4942eb1374/e07e9/1.jpg 200w,
+/static/d527a163671d3c7ddc430b4942eb1374/066f9/1.jpg 400w,
+/static/d527a163671d3c7ddc430b4942eb1374/4b190/1.jpg 800w,
+/static/d527a163671d3c7ddc430b4942eb1374/e5166/1.jpg 1200w,
+/static/d527a163671d3c7ddc430b4942eb1374/940ce/1.jpg 1569w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;브레이브 브라우저 소개 페이지&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://brave.com&quot;&gt;brave.com&lt;/a&gt; 에서 다운로드 받으실 수 있고, iOS 버전도 있으나 앱스토어 정책때문에 코인은 모으실 수 없습니다. ㅠㅠ 맥은 가능^^&lt;/p&gt;
+&lt;p&gt;우리가 유튜브나 페이스북같은 곳에서 광고를 보면 구글이 수익을 가져가고, 크리에이터에게도 수익 분배를 해주죠. 막상, 광고를 보는 사용자에게는 무료 컨텐츠를 볼 수 있다는 것 이외에는 돌아오는 것이 없습니다. 브레이브 브라우저는 종종 광고가 뜨고 그걸 보는 사용자들에게도 일정의 수익을 코인으로 지급해줍니다. 광고가 얼마나 자주 나오게 할건지는 브라우저 내에서 설정을 할 수 있는데 저는 최대한 많이 나오는 것으로 설정했지만 컴퓨터쓰면서 한번도 거슬린적 없어요. 새 탭을 열 때 종종 광고가 나오거나 노티피케이션 형식으로 나오기도 합니다. 굳이 광고를 클릭할 필요는 없습니다.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9c4eadb6024b7aa65b7fcb5ce8822905/7e35d/2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 59.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/9oADAMBAAIQAxAAAAHPpuQpzFBJ/8QAGRAAAwADAAAAAAAAAAAAAAAAAAECEBEi/9oACAEBAAEFAqlFLRyOmVj/xAAXEQADAQAAAAAAAAAAAAAAAAACEBFB/9oACAEDAQE/ARur/8QAFxEAAwEAAAAAAAAAAAAAAAAAAhARQf/aAAgBAgEBPwEpi//EABgQAAIDAAAAAAAAAAAAAAAAAAERECAx/9oACAEBAAY/AkhG0//EABoQAAMAAwEAAAAAAAAAAAAAAAABESExQVH/2gAIAQEAAT8hnhD9EusjuZaHHw2If//aAAwDAQACAAMAAAAQLA//xAAVEQEBAAAAAAAAAAAAAAAAAAAQUf/aAAgBAwEBPxCg/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERIf/aAAgBAgEBPxC6wQ//xAAcEAADAQACAwAAAAAAAAAAAAAAAREhMVFxsfD/2gAIAQEAAT8QqsjIbvsVG2+YvqTYcKQu2k8I1b6IP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;광고를 보고 받은 코인 리워드&quot;
+        title=&quot;광고를 보고 받은 코인 리워드&quot;
+        src=&quot;/static/9c4eadb6024b7aa65b7fcb5ce8822905/4b190/2.jpg&quot;
+        srcset=&quot;/static/9c4eadb6024b7aa65b7fcb5ce8822905/e07e9/2.jpg 200w,
+/static/9c4eadb6024b7aa65b7fcb5ce8822905/066f9/2.jpg 400w,
+/static/9c4eadb6024b7aa65b7fcb5ce8822905/4b190/2.jpg 800w,
+/static/9c4eadb6024b7aa65b7fcb5ce8822905/e5166/2.jpg 1200w,
+/static/9c4eadb6024b7aa65b7fcb5ce8822905/b17f8/2.jpg 1600w,
+/static/9c4eadb6024b7aa65b7fcb5ce8822905/7e35d/2.jpg 1728w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;광고를 보고 받은 코인 리워드&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;처음에 설치하시고, Brave Rewards Program에 동의하시면, 위의 이미지처럼 새창을 열면 항상은 아니고 종종 광고가 뜨는데 그냥 이렇게 광고페이지 본 걸로 (클릭할 필요없음) Brave Rewards인 BAT 코인이 자동으로 적립됩니다^^ 이 $BAT코인은 대부분의 거래소에서 실제 많은 사람들이 거래하고 있는 코인입니다. &lt;/p&gt;
+&lt;p&gt;저는 설치하고도 한참동안은 리워드가 적립이 안되었어요. 온라인 포럼에도 그런 경우가 많더라구요. 그러다가 얼마전부터 적립되기 시작하더라고요. 그래서 아직까지는 코인을 많이 모으지는 못했습니다. 혹시 비슷한 문제를 겪으시게 되면 좀 기다려보시면 좋을 것 같아요. &lt;/p&gt;
+&lt;p&gt;토큰 경제에 참여하는 모든 사람들에게 이렇게 수익을 배분해주는 시스템이 재미있습니다. 사람들의 주의력(Attention)이 가장 귀한 자원이라고 하는 세상입니다. 앞으로 브레이브 브라우저처럼 광고를 본 소비자들에게도 광고 수익이 좀 나눠지는 세상이 보편화될것 같아요. 얼마전부터는 아마존도 브레이브에서 광고를 하더라고요. 점점 이런 대형규모의 광고주들이 많아지면 BAT 코인의 가치도 점점 올라가겠죠? 왜냐하면 광고주들이 광고비를 BAT 코인으로 내기 때문이에요. $BAT는 토탈 공급량이 고정되어 있으니 수요가 늘어나면 코인의 가격도 오를 거라고 단순하게 예상해볼 수 있습니다. 물론, 코인 가격이 어떻게 될지는 아무도 예측할 수 없지만요.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3e97632a999a23aaea72db7d742dec31/45e8b/3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 23%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdsEiz//xAAYEAADAQEAAAAAAAAAAAAAAAAAARESMf/aAAgBAQABBQLKJB9//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBABAQEBAQAAAAAAAAAAAAAAAREAIUH/2gAIAQEAAT8hIDMAcPcepN//2gAMAwEAAgADAAAAEHgv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QR//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxBkf//EABkQAQACAwAAAAAAAAAAAAAAAAEAEWGB4f/aAAgBAQABPxBNTe4gqIQBAydn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;현재 BAT 토큰 가격&quot;
+        title=&quot;현재 BAT 토큰 가격&quot;
+        src=&quot;/static/3e97632a999a23aaea72db7d742dec31/4b190/3.jpg&quot;
+        srcset=&quot;/static/3e97632a999a23aaea72db7d742dec31/e07e9/3.jpg 200w,
+/static/3e97632a999a23aaea72db7d742dec31/066f9/3.jpg 400w,
+/static/3e97632a999a23aaea72db7d742dec31/4b190/3.jpg 800w,
+/static/3e97632a999a23aaea72db7d742dec31/45e8b/3.jpg 870w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;현재 BAT 토큰 가격&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;만약 이런 작은 리워드에 큰 관심이 없는 분들이라면, 브레이브 크리에이터에 등록된 웹사이트 운영자들에게 매달 내가 가진 코인의 일부를 자동으로 서포트 형식으로 보내거나 일회성 팁을 선물해줄 수도 있어요. 페트리온(patreon)의 서포트 개념인데 따로 결제를 해서 돈을 보내긴 귀찮은 경우, 이렇게 광고보고 받은 코인을 팁처럼 보내줄 수 있어서 보내는 입장에선 돈이 들지 않고, 받는 입장의 크리에이터들에겐 큰 힘이 되는 서비스같아요.&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 598px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/aaa085a58550fe651043389c009fb28e/fdf7c/4.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 93%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAATABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBAv/EABgBAAMBAQAAAAAAAAAAAAAAAAIDBAAB/9oADAMBAAIQAxAAAAHea+NKenBorYdTJGo//8QAGxAAAgIDAQAAAAAAAAAAAAAAAgMAAQQSMxT/2gAIAQEAAQUCt7IDT29RRPHI4RRlSnHdqn//xAAZEQACAwEAAAAAAAAAAAAAAAAAQQIQERL/2gAIAQMBAT8BeHER1//EABkRAAEFAAAAAAAAAAAAAAAAABEAARASMf/aAAgBAgEBPwG7YEJ//8QAHBAAAgICAwAAAAAAAAAAAAAAAAIBIRAxUXGB/9oACAEBAAY/AuPC5ro0oo2Fsm8f/8QAHhAAAgIABwAAAAAAAAAAAAAAAREAIRAxUWGhwfD/2gAIAQEAAT8hJLy7SCBPe209Rg3ltazj9xwQCigJNFh//9oADAMBAAIAAwAAABBDNwL/xAAbEQACAQUAAAAAAAAAAAAAAAAAARARIVFhkf/aAAgBAwEBPxCivZNIku4//8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIRD/2gAIAQIBAT8QqsCBref/xAAfEAEAAwACAQUAAAAAAAAAAAABABEhQVEQMWFxkfH/2gAIAQEAAT8QWjVsAoPayMzGyYH1s/ChkBD065ZcfTOPwm+JUGGCjtl25Cyjs8f/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;내가 받은 리워드로 크리에이터 후원하기&quot;
+        title=&quot;내가 받은 리워드로 크리에이터 후원하기&quot;
+        src=&quot;/static/aaa085a58550fe651043389c009fb28e/fdf7c/4.jpg&quot;
+        srcset=&quot;/static/aaa085a58550fe651043389c009fb28e/e07e9/4.jpg 200w,
+/static/aaa085a58550fe651043389c009fb28e/066f9/4.jpg 400w,
+/static/aaa085a58550fe651043389c009fb28e/fdf7c/4.jpg 598w&quot;
+        sizes=&quot;(max-width: 598px) 100vw, 598px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;내가 받은 리워드로 크리에이터 후원하기&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;요렇게 웹서핑을 하다보면 삼각형의 BAT 코인 마크가 뜨는 사이트들이 있는데 이 삼각형을 누르면 사진처럼 팁을 보내는 기능이 연결되어있어서 간편하게 후원을 하실수 있어요. 제 웹사이트도 등록을 해놓았습니다^^&lt;/p&gt;
+&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4d76dd715201fdd7b69884f9d8195fc8/bb072/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 64%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABqklEQVQ4y5VTCY7bMBDL/x/Td7QfWKAtsLkAJ44tn7Iuy+Fyxkk2W/TYCiAojUdjiiNtRuvhQoSLaUVK8GmdTy4Q8e/w3BuSwk4BG8+NOWTEPipCE+Brj9nO+MzIOSOEgEQR85yxCWmGMw71d4N218H8MKheas5b5CUzaUYiJDmlhbzcmGvCUaVpBgyDZfGFBakwxIDejhgni9FZWD+hG3r0/UgMaNsO42jJCV2f0bSZcU92XC+My8+uq0IfVqne06/JKQd6KixwzivWmLBXlm9yTOec4nq9cj2Lwlk3nM8VzmWlXJa1cnG64HKpcVI2KIry8b1kvKoa/da0vfqZ1EMWtHbCpTIwpkNdN5rwmDf01bQ8FmPNe6zrhkdOpG0fCopCMRVXqPTPDsl9zk93D38dSRp1uwoxRoXMnyHdfy78seAt8PXLK+qfDYapx35/wOFwwG63w/F4VGy3W4XEiqJgp3t2f/ydwrXg67cC454F7UCzT2zAmT4ZVehDuHX5naW70v1/HnlZFn0Bwv/jqd5DeY9JXwGfHxskkPX9JQgi79efkO6Qu0xxbyvi8bvcPhqaAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;브라우저 설정에서 자동 후원 기능 끄기&quot;
+        title=&quot;브라우저 설정에서 자동 후원 기능 끄기&quot;
+        src=&quot;/static/4d76dd715201fdd7b69884f9d8195fc8/5a190/5.png&quot;
+        srcset=&quot;/static/4d76dd715201fdd7b69884f9d8195fc8/772e8/5.png 200w,
+/static/4d76dd715201fdd7b69884f9d8195fc8/e17e5/5.png 400w,
+/static/4d76dd715201fdd7b69884f9d8195fc8/5a190/5.png 800w,
+/static/4d76dd715201fdd7b69884f9d8195fc8/c1b63/5.png 1200w,
+/static/4d76dd715201fdd7b69884f9d8195fc8/bb072/5.png 1318w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&quot;gatsby-resp-image-figcaption&quot;&gt;브라우저 설정에서 자동 후원 기능 끄기&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;또, 자동으로 팁을 보내길 원치 않으시는 경우는 위 사진처럼 브라우저 설정에서 기능을 끌 수 있습니다.&lt;/p&gt;
+&lt;p&gt;그럼 이렇게 모인 코인은 어떻게 현금화할 수 있을까요? 일단은 현재 기준으로 최소 25 $BAT 코인을 모아야 합니다. 이 최소금액은 $BAT 코인의 가치에 따라 바뀔 수도 있어요. 최소 금액 이상을 모으신 분들은 Uphold 지갑을 만들어서 코인을 옮길 수 있는데, 포럼의 글들을 보면 Uphold 지갑의 수수료 때문에 사용자들의 불만이 많다고 하네요. 현재 브레이브 팀에서 Gemini 지갑과 연동하는 업데이트를 준비 중이라고 하니 그 때까지 기다렸다가 각 서비스를 비교해보셔도 좋을 것 같네요.&lt;/p&gt;
+&lt;p&gt;다운로드 링크 다시 한번 달아드릴게요. 지금 바로 다운받아서 앞으로 인터넷 하실때는 코인도 받으세요^^&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://brave.com&quot;&gt;brave.com&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[코인베이스에서 퀴즈 풀고 코인 리워드받기]]></title><description><![CDATA[…]]></description><link>https://coinmoon.xyznull</link><guid isPermaLink="false">https://coinmoon.xyznull</guid><pubDate>Fri, 30 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;저는 개인적으로 제미나이를 더 우선으로 사용하지만 거래 가능한 코인들이 거래소마다 달라서 코인베이스 계정도 가지고 있는데요. 사실은 저도 코인 입문은 코인베이스로 했습니다.^^ 코인베이스로 입문시에 좋은 것 중 하나는 바로 무료로 코인들을 받을 수 있다는 것인데요. &lt;/p&gt;
 &lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -69,7 +250,7 @@
 &lt;p&gt;몇가지 코인들에 대해 설명해주는 비디오를 보고 퀴즈를 맞히면 선물로 해당 코인들을 받을 수 있습니다. 답이 틀려도 맞힐 때까지 해도 되니까 사실상 코인은 모두에게 다 주는 것이에요. 게다가 이 비디오들은 홍보 목적외에 교육의 목적도 있어서 봐두면 코인들을 이해하는데도 많이 도움이 됩니다. 공부도 하고 코인도 얻고 일석이조니까 아직 코인베이스 계정이 없으신 분들은 가입하시고 코인 받으세요~ 리워드 주는 코인들이 바뀔 수도 있다고 하니까 메뉴에 뜨면 바로 바로 받는게 좋겠습니다. 뭐, 얼마 안되는 금액이지만 재미있잖아요.^^&lt;/p&gt;
 &lt;p&gt;아래의 제 리퍼럴 링크를 이용해서 가입하시면 100불 이상 거래시 양쪽 모두에게 10불 상당의 비트코인이 지급됩니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.coinbase.com/join/lee_s5c9&quot;&gt;https://www.coinbase.com/join/lee_s5c9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;코인베이스는 사실 입문자용이라 사용하기는 편리하지만 수수료가 비싸다는 단점이 있으니 가입하고 공짜 코인만 받으시고 코인 매매를 하실때는 &lt;a href=&quot;https://pro.coinbase.com&quot;&gt;코인베이스 프로&lt;/a&gt; 로 접속하셔서 하시는게 좋아요. 둘이 같은 회사라서 계정 한번만 만들면 같은 아이디로 로그인됩니다. 모바일에서 하실 때에도 coinbase와 coinbase pro 앱이 두개로 나눠져 있습니다. 계정은 같지만, 보유 코인, 밸런스는 다르게 취급된다는 점 참고하세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[비트코인으로 캐시백되는 마스터카드 출시 예정]]></title><description><![CDATA[제미나이(Gemini)가 마스터카드랑 파트너로 비트코인(ETH나 UNI, DAI 등 다른 3…]]></description><link>https://coinmoon.xyz/gemini-credit-card/</link><guid isPermaLink="false">https://coinmoon.xyz/gemini-credit-card/</guid><pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
+&lt;p&gt;코인베이스는 사실 입문자용이라 사용하기는 편리하지만 수수료가 비싸다는 단점이 있으니 가입하고 공짜 코인만 받으시고 코인 매매를 하실때는 &lt;a href=&quot;https://pro.coinbase.com&quot;&gt;코인베이스 프로&lt;/a&gt; 로 접속하셔서 하시는게 좋아요. 둘이 같은 회사라서 계정 한번만 만들면 같은 아이디로 로그인됩니다. 모바일에서 하실 때에도 coinbase와 coinbase pro 앱이 두개로 나눠져 있습니다. 계정은 같지만, 보유 코인, 밸런스는 따로 취급된다는 점 참고하세요.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[비트코인으로 캐시백되는 마스터카드 출시 예정]]></title><description><![CDATA[제미나이(Gemini)가 마스터카드랑 파트너로 비트코인(ETH나 UNI, DAI 등 다른 3…]]></description><link>https://coinmoon.xyznull</link><guid isPermaLink="false">https://coinmoon.xyznull</guid><pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;figure class=&quot;gatsby-resp-image-figure&quot; style=&quot;&quot;&gt;
     &lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
@@ -109,7 +290,7 @@
 &lt;p&gt;또, Monthly로 캐시백되는게 아니고 &lt;strong&gt;돈 쓰자마자 바로! 즉각적으로 캐시백&lt;/strong&gt;됩니다. 기존에도 Bitpay 등 코인으로 사용하는 카드들이 몇개 나왔었는데 빗페이같은 경우는 코인을 충전해서 그만큼만 쓸수있는 카드였다면 이번 여름에 출시되는 제미나이 카드는 일반 카드처럼 &lt;strong&gt;달러로 쓰고&lt;/strong&gt; 캐시백을 코인으로 해준다는 엄청난 차이가 있어요. 최대 3% 캐시백인데 레스토랑이 3%, 그로서리샤핑이 2%, 그 외는 1% 캐시백이라고 합니다. 캐시백받은거 제미나이에서 빌려주고 이자도 받을 수 있다고 하니 꽤나 기대가되는 카드입니다.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;여름에 카드 출시되면 다시 글 올려볼게요&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;제미나이 계정이 아직 없으신 분들은 가입 후 30일내에 100불 이상 거래하면 양쪽 다 비트코인 $10씩 받는 제 리퍼럴 링크도 남길게요.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.gemini.com/share/4qgkrzkcl&quot;&gt;https://www.gemini.com/share/4qgkrzkcl&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[코인거래소 Gemini 장단점]]></title><description><![CDATA[요즘 코인에 대한 관심처럼 코인거래소들도 많아지고 있는데 그 중에 어떤 거래소를 이용하면 좋을지 고민이신 분들께 제가 애용하는 거래소인 Gemini…]]></description><link>https://coinmoon.xyz/gemini-cryptocurrency-exchange/</link><guid isPermaLink="false">https://coinmoon.xyz/gemini-cryptocurrency-exchange/</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;요즘 코인에 대한 관심처럼 코인거래소들도 많아지고 있는데 그 중에 어떤 거래소를 이용하면 좋을지 고민이신 분들께 제가 애용하는 거래소인 Gemini를 소개하고 간단한 장단점을 이야기해보려고 합니다. 클릭 한 번으로 수수료를 아낄 수 있는 방법도 알려드릴게요.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gemini.com/share/4qgkrzkcl&quot;&gt;https://www.gemini.com/share/4qgkrzkcl&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[코인거래소 Gemini 장단점]]></title><description><![CDATA[요즘 코인에 대한 관심처럼 코인거래소들도 많아지고 있는데 그 중에 어떤 거래소를 이용하면 좋을지 고민이신 분들께 제가 애용하는 거래소인 Gemini…]]></description><link>https://coinmoon.xyznull</link><guid isPermaLink="false">https://coinmoon.xyznull</guid><pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;요즘 코인에 대한 관심처럼 코인거래소들도 많아지고 있는데 그 중에 어떤 거래소를 이용하면 좋을지 고민이신 분들께 제가 애용하는 거래소인 Gemini를 소개하고 간단한 장단점을 이야기해보려고 합니다. 클릭 한 번으로 수수료를 아낄 수 있는 방법도 알려드릴게요.&lt;/p&gt;
 &lt;p&gt;일단 &lt;strong&gt;Gemini, 제미나이&lt;/strong&gt;는 페이스북을 다룬 영화 The Social Network 에서 마크 저크버그에게 처음 페이스북의 아이디어를 제공한 하버드 출신 쌍둥이 윙클보스 형제들이 페이스북을 상대로한 소송에서 승소한 돈으로 만든 코인거래소입니다^^&lt;/p&gt;
 &lt;h2&gt;첫번째로 제미나이의 가장 큰 장점은 수수료가 비교적 저렴하다는 것.&lt;/h2&gt;
 &lt;p&gt;얼마 전 상장을 해서 더 유명해진 코인베이스와 비교를 해보자면 코인 매매 수수료가 제미나이가 조금 더 저렴하고(코인베이스 프로가 0.5%, 제미나이는 0.35%) 코인별로 한달에 10번씩 withdraw 할때 수수료가 무료라는 엄청난 장점이 있습니다. Withdraw, 출금을 왜 하지? 생각하시는 분들도 계실텐데 코인을 팔아 현금화 하고싶진 않지만 다른 거래소나 개인 지갑으로 이동시키고 싶을때가 있는데 이럴때마다 출금 수수료가 0.5%나 되는 코인베이스는 너무 부담스러운게 사실입니다. 출금 수수료 0%인 곳과 0.5%인 곳은 차이가 엄청나죠? 제미나이의 가장 큰 장점중 하나라고 생각합니다.&lt;/p&gt;
