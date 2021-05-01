@@ -272,18 +272,19 @@ a:focus {
 }
 
 .post-list-item p {
+  color: var(--color-text-light);
   margin-bottom: var(--spacing-0);
 }
 
 .post-list-item h2 {
   font-size: var(--fontSize-4);
   color: var(--color-black);
-  margin-bottom: var(--spacing-2);
+  margin-bottom: var(--spacing-0);
   margin-top: var(--spacing-0);
 }
 
 .post-list-item header {
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-1);
 }
 
 .header-link-home {
