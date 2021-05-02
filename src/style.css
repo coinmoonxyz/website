@@ -284,8 +284,8 @@ a:focus {
   font-size: var(--fontSize-4);
   font-weight: var(--fontWeight-extrabold);
   color: var(--color-black);
-  margin-bottom: var(--spacing-0);
-  margin-top: var(--spacing-0);
+  margin-bottom: var(--spacing-1);
+  margin-top: var(--spacing-3);
 }
 
 .post-list-item header {

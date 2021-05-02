@@ -2,7 +2,7 @@
 title: MIT 블록체인과 화폐 강의 요약 2강
 description: "화폐, 장부와 비트코인"
 slug: "/mit-blockchain-course-2/"
-date: "2021-05-02"
+date: "2021-05-02T21:31:00Z"
 author: 코인별
 tags: 
 - 블록체인
