@@ -305,7 +305,6 @@ li.tag {
   padding: var(--spacing-1) var(--spacing-2);
   display: inline-block;
   font-size: var(--fontSize-0);
-  line-height: 1.5;
 }
 li.tag:hover {
   background: var(--color-logo-light);

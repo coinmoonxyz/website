@@ -15,9 +15,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
-      <main style={{
-        overflow: "auto"
-      }}>{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
