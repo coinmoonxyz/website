@@ -18,7 +18,7 @@ const TagsPage = ({
 }) => (
   <Layout location={location} title={title}>
     <Seo title="모든 태그 보기" />
-    <div>
+    <div className="all-tags">
       <h1>모든 태그 보기</h1>
       <p><Link to="/">메인 페이지로 돌아가기</Link></p>
       <ul className="tags">

@@ -5,7 +5,7 @@ slug: "/mit-blockchain-course-1/"
 date: "2021-05-02"
 author: 코인별
 tags: 
-- Blockchain
+- 블록체인
 - 강의
 ---
 
