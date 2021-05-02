@@ -1,10 +1,15 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+// Utilities
+import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+// import Bio from '../components/bio'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
+  const tags = post.frontmatter.tags
+  tags.sort()
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
@@ -20,6 +25,15 @@ const BlogPostTemplate = ({ data, location }) => {
         itemType="http://schema.org/Article"
       >
         <header>
+          <ul className="tags">
+            {tags.map(tag => {
+              return (
+                <li key={tag} className="tag">
+                  <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                </li>
+              )
+            })}
+          </ul>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p
             className="description"
@@ -29,6 +43,7 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="description"
           />
           <p className="date">{post.frontmatter.date}</p>
+          {/* <Bio author={post.frontmatter.author} /> */}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -106,6 +121,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

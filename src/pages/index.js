@@ -1,7 +1,9 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+// Utilities
+import kebabCase from "lodash/kebabCase"
 
-import Bio from "../components/bio"
+// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -12,10 +14,11 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="All posts" />
-      {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title
+          const tags = post.frontmatter.tags
+          tags.sort()
 
           return (
             <li key={post.fields.slug}>
@@ -25,6 +28,15 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
+                  <ul className="tags">
+                    {tags.map(tag => {
+                      return (
+                        <li key={tag} className="tag">
+                          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
                   <h2>
                     <Link to={post.frontmatter.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>
@@ -67,6 +79,8 @@ export const pageQuery = graphql`
           title
           description
           slug
+          author
+          tags
         }
       }
     }
