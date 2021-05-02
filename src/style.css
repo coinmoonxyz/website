@@ -55,7 +55,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-logo: rgb(37, 211, 144);
+  --color-logo: rgb(10, 150, 96);
   --color-logo-light: rgb(178, 237, 209);
   --color-primary: #005b99;
   --color-text: #2e353f;
@@ -360,6 +360,7 @@ li.tag a {
   font-size: var(--fontSize-5);
   font-weight: var(--fontWeight-extrabold);
   margin: var(--spacing-4) var(--spacing-0) var(--spacing-3) var(--spacing-0);
+  line-height: 1.3;
 }
 
 .blog-post header .description {

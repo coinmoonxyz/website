@@ -5,10 +5,10 @@ module.exports = {
       name: `코인문`,
       summary: ``,
     },
-    description: ``,
+    description: `코인 정보와 공부`,
     siteUrl: `https://coinmoon.xyz/`,
     social: {
-      twitter: ``,
+      twitter: `coinmoonxyz`,
     },
   },
   plugins: [
