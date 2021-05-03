@@ -5,7 +5,7 @@ module.exports = {
       name: `코인문`,
       summary: ``,
     },
-    description: `코인 정보와 공부`,
+    description: `코인 가이드`,
     siteUrl: `https://coinmoon.xyz/`,
     social: {
       twitter: `coinmoonxyz`,
