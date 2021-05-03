@@ -33,10 +33,9 @@ const BlogIndex = ({ data, location }) => {
                       return (
                         <Link
                           key={tag}
-                          className="tag"
                           to={`/tags/${kebabCase(tag)}/`}
                         >
-                          <li>{tag}</li>
+                          <li className="tag">{tag}</li>
                         </Link>
                       )
                     })}

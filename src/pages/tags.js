@@ -14,20 +14,22 @@ const TagsPage = ({
       siteMetadata: { title },
     },
   },
-  location
+  location,
 }) => (
   <Layout location={location} title={title}>
     <Seo title="모든 태그 보기" />
     <div className="all-tags">
       <h1>모든 태그 보기</h1>
-      <p><Link to="/">메인 페이지로 돌아가기</Link></p>
+      <p>
+        <Link to="/">메인 페이지로 돌아가기</Link>
+      </p>
       <ul className="tags">
         {group.map(tag => (
-          <li key={tag.fieldValue} className="tag">
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+          <Link key={tag.fieldValue} to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <li className="tag">
               {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
+            </li>
+          </Link>
         ))}
       </ul>
     </div>

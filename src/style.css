@@ -297,7 +297,7 @@ ul.tags {
   list-style-type: none;
 }
 
-a.tag {
+.tag {
   margin-bottom: var(--spacing-0);
   margin-right: var(--spacing-2);
   border: 1px solid var(--color-tag);
@@ -306,17 +306,17 @@ a.tag {
   display: inline-block;
   font-size: var(--fontSize-0);
 }
-a.tag:hover {
+.tag:hover {
   background: var(--color-logo-light);
 }
 
-a.tag {
+.tag {
   color: var(--color-tag);
   text-decoration: none;
 }
 
 /* All tags page*/
-.all-tags li.tag {
+.all-tags .tag {
   margin-bottom: var(--spacing-4);
   margin-right: var(--spacing-3);
   border: 1px solid var(--color-tag);
@@ -325,7 +325,7 @@ a.tag {
   display: inline-block;
   font-size: var(--fontSize-1);
 }
-.all-tags li.tag:hover {
+.all-tags .tag:hover {
   background: var(--color-logo-light);
 }
 
