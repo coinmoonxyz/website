@@ -31,9 +31,13 @@ const BlogIndex = ({ data, location }) => {
                   <ul className="tags">
                     {tags.map(tag => {
                       return (
-                        <li key={tag} className="tag">
-                          <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                        </li>
+                        <Link
+                          key={tag}
+                          className="tag"
+                          to={`/tags/${kebabCase(tag)}/`}
+                        >
+                          <li>{tag}</li>
+                        </Link>
                       )
                     })}
                   </ul>

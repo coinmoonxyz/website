@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import { css } from "@emotion/css"
 // Utilities
 import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"

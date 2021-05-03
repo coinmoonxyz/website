@@ -297,7 +297,7 @@ ul.tags {
   list-style-type: none;
 }
 
-li.tag {
+a.tag {
   margin-bottom: var(--spacing-0);
   margin-right: var(--spacing-2);
   border: 1px solid var(--color-tag);
@@ -306,11 +306,11 @@ li.tag {
   display: inline-block;
   font-size: var(--fontSize-0);
 }
-li.tag:hover {
+a.tag:hover {
   background: var(--color-logo-light);
 }
 
-li.tag a {
+a.tag {
   color: var(--color-tag);
   text-decoration: none;
 }
@@ -378,7 +378,12 @@ li.tag a {
   margin: 0;
 }
 
+.blog-post .gatsby-resp-image-wrapper {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
 .blog-post .gatsby-resp-image-figcaption {
+  margin-top: var(--spacing-3);
   text-align: center;
   color: var(--color-text-light);
 }
