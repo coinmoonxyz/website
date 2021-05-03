@@ -6,6 +6,7 @@ date: "2021-04-28"
 author: 코인문
 tags:
 - 리워드
+- 소식
 ---
 
 ![이미지 출처 gemini.com](1.jpg)
