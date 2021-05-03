@@ -379,7 +379,7 @@ a.tag {
 }
 
 .blog-post .gatsby-resp-image-wrapper {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .blog-post .gatsby-resp-image-figcaption {
