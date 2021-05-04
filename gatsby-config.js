@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
     title: `coinmoon.xyz`,
-    author: {
-      name: `코인문`,
-      summary: ``,
-    },
+    authors: [
+      {
+        name: `코인문`,
+        summary: ``,
+      },
+      {
+        name: `코인별`,
+        summary: ``,
+      },
+    ],
     description: `코인 가이드`,
     siteUrl: `https://coinmoon.xyz/`,
     social: {
@@ -143,7 +149,7 @@ module.exports = {
       options: {
         googleAnalytics: {
           trackingId: `UA-195886234-1`,
-          cookieName: 'gatsby-gdpr-google-analytics', // default
+          cookieName: "gatsby-gdpr-google-analytics", // default
           // Setting this parameter is optional
           anonymize: true,
         },

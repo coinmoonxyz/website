@@ -20,11 +20,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         ) {
           nodes {
             id
-            frontmatter {
-              slug
-            }
             fields {
-              slug_old
+              slug
             }
           }
         }
@@ -58,8 +55,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       createPage({
-        // path: post.fields.slug,
-        path: post.frontmatter.slug,
+        path: post.fields.slug,
         component: blogPost,
         context: {
           id: post.id,
@@ -91,10 +87,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
 
+    // reformat folder name for slug (remove date portion)
+    const words = value.split("-")
+    words.shift() // remove first element
+    const newv = "/" + words.join("-")
+
     createNodeField({
-      name: `slug_old`,
+      name: `slug`,
       node,
-      value,
+      value: newv,
     })
   }
 }
@@ -133,7 +134,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
-      slug: String
     }
 
     type Fields {

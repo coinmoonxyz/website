@@ -17,15 +17,20 @@ const Tags = ({ pageContext, data, location }) => {
       <Seo title={tag} description={`${tag} 검색 결과`} />
 
       <h1>{tagHeader}</h1>
-      <p><Link to="/">메인 페이지로 돌아가기</Link></p>
+      <p>
+        <Link to="/">메인 페이지로 돌아가기</Link>
+      </p>
       <Link to="/tags">모든 태그 보기</Link>
 
       <ul>
         {edges.map(({ node }) => {
-          const { title, description, slug } = node.frontmatter
+          const { title, description } = node.frontmatter
+          const slug = node.fields.slug
           return (
             <li key={slug}>
-              <Link to={slug}>{title} - {description}</Link>
+              <Link to={slug}>
+                {title} - {description}
+              </Link>
             </li>
           )
         })}
@@ -46,11 +51,10 @@ Tags.propTypes = {
           node: PropTypes.shape({
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired,
+            }),
+            fields: PropTypes.shape({
               slug: PropTypes.string.isRequired,
             }),
-            // fields: PropTypes.shape({
-            // slug: PropTypes.string.isRequired,
-            // }),
           }),
         }).isRequired
       ),
@@ -75,10 +79,12 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
             description
-            slug
           }
         }
       }
