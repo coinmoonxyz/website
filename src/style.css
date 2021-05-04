@@ -186,7 +186,7 @@ ol {
   margin-left: var(--spacing-0);
   margin-right: var(--spacing-0);
   padding: var(--spacing-0);
-  margin-bottom: var(--spacing-8);
+  margin-bottom: var(--spacing-12);
   list-style-position: outside;
   list-style-image: none;
 }
@@ -216,9 +216,10 @@ blockquote {
   margin-bottom: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-logo);
-  color: var(--color-text-light);
+  /* color: var(--color-text-light); */
+  color: #777;
   font-size: var(--fontSize-2);
-  font-weight: var(--fontWeight-medium);
+  font-weight: var(--fontWeight-bold);
 }
 
 blockquote > :last-child {
@@ -245,11 +246,12 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
+  text-underline-offset: 2px;
 }
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 /* Custom classes */
@@ -305,18 +307,18 @@ ul.tags li {
   display: inline-block;
 }
 
-.tag {
+a.tag {
   margin-bottom: var(--spacing-0);
   margin-right: var(--spacing-2);
   border: 1px solid var(--color-tag);
   border-radius: var(--fontSize-2);
   padding: var(--spacing-1) var(--spacing-2);
   font-size: var(--fontSize-0);
-  color: var(--color-tag);
+  color: var(--color-text);
   text-decoration: none;
 }
 
-.tag:hover {
+a.tag:hover {
   background: var(--color-logo-light);
 }
 
@@ -389,11 +391,13 @@ ul.tags li {
 
 .blog-post a {
   color: var(--color-text);
-  text-underline-offset: 2px;
-  /* text-decoration-thickness: 2px; */
 }
+
 .blog-post a:hover {
   text-decoration: underline;
+}
+.blog-post a.tag:hover {
+  text-decoration: none;
 }
 
 .blog-post .gatsby-resp-image-wrapper {
