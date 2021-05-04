@@ -2,7 +2,7 @@
 title: MIT 블록체인과 화폐 강의 요약 3강
 description: "블록체인의 기본과 암호화"
 slug: "/mit-blockchain-course-3/"
-date: "2021-05-03"
+date: "2021-05-03T22:20:00Z"
 author: 코인별
 tags: 
 - 블록체인
@@ -38,7 +38,7 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 
 ## 비트코인 디자인의 특징
 
-> I've been working on a new electronic cash system that's fully peer to peer with no trusted third pary. - Satoshi Nakamoto가 뉴스그룹에 남긴 글
+> I've been working on a new electronic cash system that's fully peer to peer with no trusted third pary. -- Satoshi Nakamoto가 뉴스그룹에 남긴 글
 
 사토시 나카모토는 페이퍼에서 "블록체인"이라는 용어를 직접적으로 사용하지는 않았습니다. "블록"과 "체인"을 따로 사용하기는 했습니다. 비트코인이 작동하기 위한 네트워크가 디자인된 방식에서 따와 2016년에야 한 단어로 사용되기 시작했다고 합니다. 
 

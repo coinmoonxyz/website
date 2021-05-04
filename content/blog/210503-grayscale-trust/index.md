@@ -2,10 +2,9 @@
 title: Grayscale이 보유한 코인 리스트
 description: "미국 최대의 디지털화폐 투자/관리 회사인 Grayscale은 어떤 코인을 가지고 있을까"
 slug: "/grayscale-trust/"
-date: "2021-05-03"
+date: "2021-05-03T22:15:00Z"
 author: 코인문
 tags: 
-- 블록체인
 - 코인
 ---
 

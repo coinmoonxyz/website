@@ -55,7 +55,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-logo: rgb(10, 150, 96);
+  --color-logo: rgb(13, 182, 117);
   --color-logo-light: rgb(178, 237, 209);
   --color-primary: #005b99;
   --color-text: #2e353f;
@@ -207,14 +207,14 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-light);
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-logo);
+  color: var(--color-text-light);
   font-size: var(--fontSize-2);
-  font-style: italic;
-  margin-bottom: var(--spacing-8);
+  font-weight: var(--fontWeight-medium);
 }
 
 blockquote > :last-child {
@@ -266,7 +266,8 @@ a:focus {
 
 .main-heading {
   font-size: var(--fontSize-3);
-  color: rgb(37, 211, 144);
+  /* color: rgb(37, 211, 144); */
+  color: var(--color-logo);
   margin: 0;
 }
 
@@ -281,11 +282,11 @@ a:focus {
 }
 
 .post-list-item h2 {
+  margin-bottom: var(--spacing-1);
+  margin-top: var(--spacing-0);
   font-size: var(--fontSize-4);
   font-weight: var(--fontWeight-extrabold);
   color: var(--color-black);
-  margin-bottom: var(--spacing-1);
-  margin-top: var(--spacing-3);
 }
 
 .post-list-item header {
@@ -293,8 +294,11 @@ a:focus {
 }
 
 ul.tags {
-  margin-bottom: var(--spacing-1);
+  margin-bottom: var(--spacing-0);
   list-style-type: none;
+}
+ul.tags li {
+  display: inline-block;
 }
 
 .tag {
@@ -303,16 +307,12 @@ ul.tags {
   border: 1px solid var(--color-tag);
   border-radius: var(--fontSize-2);
   padding: var(--spacing-1) var(--spacing-2);
-  display: inline-block;
   font-size: var(--fontSize-0);
+  color: var(--color-tag);
+  text-decoration: none;
 }
 .tag:hover {
   background: var(--color-logo-light);
-}
-
-.tag {
-  color: var(--color-tag);
-  text-decoration: none;
 }
 
 /* All tags page*/
@@ -359,7 +359,7 @@ ul.tags {
 .blog-post header h1 {
   font-size: var(--fontSize-5);
   font-weight: var(--fontWeight-extrabold);
-  margin: var(--spacing-4) var(--spacing-0) var(--spacing-3) var(--spacing-0);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-3) var(--spacing-0);
   line-height: 1.3;
 }
 
@@ -374,8 +374,21 @@ ul.tags {
   font-family: var(--font-heading);
 }
 
+.blog-post hr {
+  margin: var(--spacing-12) 0;
+}
+
 .blog-post figure {
   margin: 0;
+}
+
+.blog-post a {
+  color: var(--color-text);
+  text-underline-offset: 2px;
+  /* text-decoration-thickness: 2px; */
+}
+.blog-post a:hover {
+  text-decoration: underline;
 }
 
 .blog-post .gatsby-resp-image-wrapper {
