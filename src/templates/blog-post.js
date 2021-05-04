@@ -6,7 +6,7 @@ import moment from "moment" // for date
 import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Bio from '../components/bio'
+import Author from '../components/author'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -19,6 +19,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const modifiedTime = data.allFile.edges[0].node.modifiedTime
   // compare publish date vs. modified date: returns true if updated date is different from published
   const updated = moment(modifiedTime).isAfter(date)
+
+  console.log(post.frontmatter)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -55,11 +57,11 @@ const BlogPostTemplate = ({ data, location }) => {
             <div className="date">{moment(date).format('dddd MMM Do, Y')}</div>
             {updated && (
               <div className="date-updated">
-                last update: {moment(modifiedTime).format('MMM Do, Y')}
+                last update: {moment(modifiedTime).format('MMM Do')}
               </div>
             )}
           </div>
-          <Bio author={post.frontmatter.author} />
+          <Author author={post.frontmatter.author} />
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -98,14 +100,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.frontmatter.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.frontmatter.slug} rel="next">
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -137,7 +139,17 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        author
+        author {
+          id
+          description
+          img {
+            childImageSharp {
+              fixed {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
         tags
       }
     }
@@ -163,7 +175,6 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        slug
       }
     }
     next: markdownRemark(id: { eq: $nextPostId }) {
@@ -172,7 +183,6 @@ export const pageQuery = graphql`
       }
       frontmatter {
         title
-        slug
       }
     }
   }

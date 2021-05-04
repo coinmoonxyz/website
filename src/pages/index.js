@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 // Utilities
 import kebabCase from "lodash/kebabCase"
 
-// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -80,7 +79,6 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
-          author
           tags
         }
       }
