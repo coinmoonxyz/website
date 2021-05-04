@@ -59,7 +59,7 @@
   --color-logo-light: rgb(178, 237, 209);
   --color-primary: #005b99;
   --color-text: #2e353f;
-  --color-text-light: #4f5969;
+  --color-text-light: #778191;
   --color-heading: #1a202c;
   --color-heading-black: black;
   --color-accent: #d1dce5;
@@ -169,7 +169,8 @@ h6 > a {
 
 /* Prose */
 
-p, li {
+p,
+li {
   word-break: keep-all;
 }
 
@@ -372,13 +373,25 @@ a.tag:hover {
 
 .blog-post header .description {
   font-size: var(--fontSize-2);
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin-bottom: var(--spacing-3);
 }
 
+/* both published and updated dates*/
+.blog-post header .dates {
+  display: flex;
+  flex-direction: row;
+}
+
 .blog-post header .date {
+  margin-right: var(--spacing-3);
+  display: inline-block;
   font-size: var(--fontSize-1);
   font-family: var(--font-heading);
+}
+.blog-post header .date-updated {
+  color: var(--color-text-light);
+  font-style: italic;
 }
 
 .blog-post hr {
@@ -451,6 +464,9 @@ a.tag:hover {
 /* Media queries */
 
 @media (max-width: 42rem) {
+  .blog-post header .dates {
+    flex-direction: column;
+  }
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
     margin-left: var(--spacing-0);
