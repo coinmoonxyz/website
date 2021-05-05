@@ -20,10 +20,6 @@ const BlogPostTemplate = ({ data, location }) => {
   // compare publish date vs. modified date: returns true if updated date is different from published
   const updated = moment(modifiedTime).isAfter(date)
 
-  console.log({ data, modifiedTime })
-
-  console.log(post.frontmatter)
-
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
@@ -56,7 +52,7 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="description"
           />
           <div className="dates">
-            <div className="date">{moment(date).format("dddd MMM Do, Y")}</div>
+            <div className="date">{moment(date).format("dddd MMM Do, YYYY")}</div>
             {updated && (
               <div className="date-updated">
                 last update: {moment(modifiedTime).format("MMM Do")}
