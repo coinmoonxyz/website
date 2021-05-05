@@ -192,6 +192,11 @@ ol {
   list-style-image: none;
 }
 
+/* nested list */
+ul ul {
+  margin: var(--spacing-0);
+}
+
 ul li,
 ol li {
   padding-left: var(--spacing-0);
