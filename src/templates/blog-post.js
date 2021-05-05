@@ -6,7 +6,7 @@ import moment from "moment" // for date
 import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Author from '../components/author'
+import Author from "../components/author"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -19,6 +19,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const modifiedTime = data.allFile.edges[0].node.modifiedTime
   // compare publish date vs. modified date: returns true if updated date is different from published
   const updated = moment(modifiedTime).isAfter(date)
+
+  console.log({ data, modifiedTime })
 
   console.log(post.frontmatter)
 
@@ -54,10 +56,10 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="description"
           />
           <div className="dates">
-            <div className="date">{moment(date).format('dddd MMM Do, Y')}</div>
+            <div className="date">{moment(date).format("dddd MMM Do, Y")}</div>
             {updated && (
               <div className="date-updated">
-                last update: {moment(modifiedTime).format('MMM Do')}
+                last update: {moment(modifiedTime).format("MMM Do")}
               </div>
             )}
           </div>
