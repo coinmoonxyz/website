@@ -59,7 +59,7 @@ const BlogPostTemplate = ({ data, location }) => {
               </div>
             )}
           </div>
-          <Author author={post.frontmatter.author} />
+          {/* <Author author={post.frontmatter.author} /> */}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
