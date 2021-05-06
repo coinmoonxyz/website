@@ -1,7 +1,7 @@
 ---
 title: MIT 블록체인과 화폐 강의 요약 6강
 description: 스마트 컨트렉트와 Dapps
-date: "2021-05-xxT20:30:00Z"
+date: "2021-05-06T19:40:00Z"
 author: 코인별
 tags: 
 - 블록체인
@@ -88,7 +88,7 @@ tags:
 
 [State of the Dapps 웹사이트](https://www.stateofthedapps.com/)에 현재 뎁스 관련 현황들이 잘 정리되어있습니다.
 
-![출처: stateofthedapps.com](dapps.png)
+![21년 5월 기준. 출처: stateofthedapps.com](dapps.png)
 
 ### 가상통화공개(ICO; Initial Coin Offerings)
 
