@@ -244,6 +244,10 @@ table {
   border-spacing: 0.25rem;
 }
 
+table td {
+  padding: var(--spacing-1) var(--spacing-2);
+}
+
 table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
@@ -289,7 +293,7 @@ a:focus {
 }
 
 .post-list-item p {
-  color: var(--color-text-light);
+  color: var(--color-text);
   margin-bottom: var(--spacing-0);
 }
 
@@ -330,7 +334,7 @@ a.tag:hover {
 
 /* All tags page*/
 .all-tags .tag {
-  margin-bottom: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
   margin-right: var(--spacing-3);
   border: 1px solid var(--color-tag);
   border-radius: var(--fontSize-4);

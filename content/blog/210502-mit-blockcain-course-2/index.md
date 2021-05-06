@@ -8,6 +8,7 @@ tags:
 - 블록체인
 - 비트코인
 - 강의
+- 공부하기
 ---
 
 1강부터 읽으실 분들은 다음 링크에서 시작하세요: https://coinmoon.xyz/mit-blockchain-course-1/
