@@ -6,11 +6,11 @@
  */
 
 import * as React from "react"
-import { Img } from 'gatsby'
-import { StaticImage } from "gatsby-plugin-image"
+// import { Img } from 'gatsby'
+// import { StaticImage } from "gatsby-plugin-image"
 
 const Author = props => {
-  const { id, description, img } = props.author
+  const { id, description } = props.author
   
   return (
     <p className="bio">

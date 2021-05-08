@@ -1,12 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-import { css } from "@emotion/css"
+// import { css } from "@emotion/css"
 import moment from "moment" // for date
 // Utilities
 import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Author from "../components/author"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -59,7 +58,6 @@ const BlogPostTemplate = ({ data, location }) => {
               </div>
             )}
           </div>
-          {/* <Author author={post.frontmatter.author} /> */}
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -140,13 +138,6 @@ export const pageQuery = graphql`
         author {
           id
           description
-          img {
-            childImageSharp {
-              fixed {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
         }
         tags
       }

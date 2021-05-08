@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 // import { useLocation } from "@reach/router"
 import { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
 import CookieConsent, {
-  Cookies,
-  getCookieConsentValue,
+  // Cookies,
+  // getCookieConsentValue,
 } from "react-cookie-consent"
 import Footer from "./footer"
 
