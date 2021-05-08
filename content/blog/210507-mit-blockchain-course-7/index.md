@@ -1,6 +1,6 @@
 ---
-title: MIT 블록체인과 화폐 강의 요약 7강
-description: 기술적인 과제
+title: 확장성, 보안성, 호환성 등 블록체인이 해결해야 할 과제
+description: "MIT 블록체인과 화폐 7강: 기술적인 과제"
 date: "2021-05-08T01:40:00Z"
 author: 코인별
 tags: 
@@ -9,9 +9,9 @@ tags:
 - 공부하기
 ---
 
-1강부터 읽으실 분들은 다음 링크에서 시작하세요: https://coinmoon.xyz/mit-blockchain-course-1/
+1강부터 읽으실 분들은 다음 링크에서 시작하세요: [1강 링크 바로가기](https://coinmoon.xyz/mit-blockchain-course-1/)
 
-현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 아래 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+현재 바이든 정부의 SEC 의장 Gary Gensler 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 아래 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GLVrOlHLJ1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -19,7 +19,7 @@ tags:
 
 ## 스터디 질문
 - 확장성, 효율성, 프라이버시, 보안, 호환성과 같은 현재 블록체인 기술의 기술적이고 상업적인 도전들은 얼마나 중요할까요?
-- 분산화, 확장성, 보안 사이에서 타협해야하는 부분은 무엇인가요? 컨센서스 소프트웨어 업데이트, 거버넌스 그리고 '하드 포크'의 타협점은 무엇인가요?
+- 분산화, 확장성, 보안 사이에서 트레이드오프해야하는 부분은 무엇인가요? 컨센서스 소프트웨어 업데이트, 거버넌스 그리고 '하드 포크'의 트레이드오프는호 무엇인가요?
 - 레이어2 어플리케이션, 영지식증명(zero-knowledge proof), 대안적 컨센서스 알고리듬이 현재 상업적인 도전을 해결하기 위해 어떤 역할을 할 수 있을까요?
 
 ## 블록체인의 기술적인 특징
