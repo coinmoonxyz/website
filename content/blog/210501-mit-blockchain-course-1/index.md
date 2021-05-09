@@ -1,5 +1,5 @@
 ---
-title: MIT 블록체인 수업내용을 정리해서 연재합니다
+title: MIT 블록체인 수업내용을 연재합니다
 description: "바이든 정부 SEC 의장의 첫 강의 내용을 정리해보았습니다."
 slug: "/mit-blockchain-course-1/"
 date: "2021-05-02"
