@@ -1,6 +1,6 @@
 ---
 title: 허가형 블록체인의 특징
-description: "MIT 블록체인과 화폐 9강: 허가형 블록체인"
+description: "MIT 블록체인과 화폐 9강: Permissioned Blockchain"
 date: "2021-05-10T20:10:00Z"
 author: 코인별
 tags: 
