@@ -227,7 +227,7 @@ blockquote {
   border-left: var(--spacing-1) solid var(--color-logo);
   /* color: var(--color-text-light); */
   color: #777;
-  font-size: var(--fontSize-3);
+  font-size: var(--fontSize-2);
   /* font-weight: var(--fontWeight-bold); */
 }
 
