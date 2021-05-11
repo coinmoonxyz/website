@@ -391,10 +391,13 @@ a.tag:hover {
   line-height: 1.3;
 }
 
-.blog-post header .description {
+.blog-post header h2.description {
   font-size: var(--fontSize-2);
+  font-weight: var(--fontWeight-normal);
   color: var(--color-text);
   margin-bottom: var(--spacing-3);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-3) var(--spacing-0);
+
 }
 
 /* both published and updated dates*/
