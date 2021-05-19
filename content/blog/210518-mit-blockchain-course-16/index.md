@@ -1,5 +1,5 @@
 ---
-title: 중앙은행 디지털화폐, CBDC
+title: 중앙은행 디지털화폐 CBDC
 description: "MIT 블록체인과 화폐 16강: 중앙은행과 상업은행 2부"
 date: "2021-05-18T15:00:00Z"
 author: 코인별
