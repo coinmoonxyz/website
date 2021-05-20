@@ -83,7 +83,12 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml`,
-    `gatsby-plugin-sitemap`
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/",
+      },
+    },
   ],
   mapping: {
     // map author to author.yaml
