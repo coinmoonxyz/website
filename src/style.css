@@ -38,9 +38,9 @@
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
-  --fontWeight-bold: 700;
-  --fontWeight-extrabold: 800;
-  --fontWeight-black: 900;
+  --fontWeight-bold: bold;
+  --fontWeight-extrabold: bold;
+  --fontWeight-black: bold;
   --fontSize-root: 16px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;

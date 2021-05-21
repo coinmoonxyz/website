@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `coinmoon.xyz`,
-    description: `코인 가이드`,
+    description: `코인문 코인가이드`,
     siteUrl: `https://coinmoon.xyz/`,
     social: {
       twitter: `coinmoonxyz`,
@@ -70,7 +70,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
