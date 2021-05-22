@@ -38,7 +38,7 @@ tags:
   - Consignment: 국제무역에서는 많이 쓰이지 않습니다.
 - 수출신용보험(Export Credit Insurance)과 Public Guarantees
 
-![Trade Financing](trade-financing.png)
+![Trade Financing](./trade-financing.png)
 
 위의 도표에서 볼 수 있듯이, 수입업자와 수출업자에게 가장 안전한 방식은 상반됩니다. 대부분의 무역은 가운데 지점에서 이루어집니다.
 
