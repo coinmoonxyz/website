@@ -60,7 +60,7 @@ tags:
 - 자기주권신원과 분산화된 식별자(decentralized identifiers; DIDs)의 사용을 용이하게 해줍니다.
 
 이에 따르는 과제는,
-- 개인을 실별할 수 있는 정보를 블록체인에 저장할 때의 프라이버시 문제가 있습니다.
+- 개인을 식별할 수 있는 정보를 블록체인에 저장할 때의 프라이버시 문제가 있습니다.
 - 접근에 대한 제어(access controls)
 - 단체 행동(collective action)과 수용(adoption)의 문제가 있습니다.
 
