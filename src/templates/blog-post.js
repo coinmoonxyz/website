@@ -14,10 +14,10 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  const date = post.frontmatter.date
-  const modifiedTime = data.allFile.edges[0].node.modifiedTime
+  const date = post.frontmatter.date // string
+  const modifiedTime = data.allFile.edges[0].node.modifiedTime // string
   // compare publish date vs. modified date: returns true if updated date is different from published
-  const updated = moment(modifiedTime).isAfter(date)
+  const updated = moment(new Date(modifiedTime)).isAfter(new Date(date))
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, location }) => {
             {tags.map(tag => {
               return (
                 <li key={tag}>
-                  <Link to={`/tags/${kebabCase(tag)}/`} className="tag">
+                  <Link to={`/tag/${kebabCase(tag)}/`} className="tag">
                     {tag}
                   </Link>
                 </li>
@@ -51,10 +51,10 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="description"
           />
           <div className="dates">
-            <div className="date">{moment(date).format("dddd MMM Do, YYYY")}</div>
+            <div className="date">{moment(new Date(date)).format("dddd MMM Do, YYYY")}</div>
             {updated && (
               <div className="date-updated">
-                last update: {moment(modifiedTime).format("MMM Do")}
+                last update: {moment(new Date(modifiedTime)).format("MMM Do")}
               </div>
             )}
           </div>
@@ -66,7 +66,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
         <div className="kofi" style={{ textAlign: "center" }}>
           <p style={{ marginBottom: "1rem" }}>
-            블로그 후원은 아래 링크를 통해서 가능합니다. 감사합니다!
+            후원금은 블로그 유지에 큰 도움이 됩니다. 감사합니다!
           </p>
           <a
             href="https://ko-fi.com/V7V74G7ID"
