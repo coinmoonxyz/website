@@ -95,7 +95,7 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 
 ### 블록 헤더
 
-![이미지 출처: 비트코인 화이트페이퍼](block-header.png)
+![bitcoin block header](block-header.png "출처: [비트코인 화이트페이퍼](https://bitcoin.org/bitcoin.pdf)")
 
 각각의 블록 헤더에 담기는 정보는 다음과 같습니다:
 
@@ -106,13 +106,13 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 - **Difficulty target:** 비트코인은 마이닝을 하는 컴퓨터 자원이 더 커질수록 블록 해시를 푸는 문제를 더 어렵게 만들도록 디자인되어있습니다. 그래서 마이너가 늘어나도 항상 한 블록을 완성하는데 10분 정도가 걸립니다. 
 - **Nonce:** 논스는 무작위 수이며, 한번만 사용되는 수를 말합니다. 무작위의 수를 뽑았는데, 같은 수가 나와버리면 어떡하죠? 앞에서 본 것처럼 확률적으로 극히 드문 경우입니다. 저와 여러분이 백사장에서 모래 한 알을 주웠는데, 그게 같을 모래알일 활률이 얼마나 될까요?
 
-![Bitcoin.com에서 제공하는 블록 익스플로러](block-explorer.png)
+![bitcoin block explorer](block-explorer.png "[Bitcoin.com](https://bitcoin.com)에서 제공하는 블록 익스플로러")
 
 ### 머클 트리
 
 > Merkle Tree is a binary data tree with hashes.
 
-![머클 트리. 이미지 출처: Wikipedia.org](merkle-tree.png)
+![머클 트리](merkle-tree.png "머클 트리. 출처: Wikipedia.org")
 
 각 블록에 담기는 수천 개의 거래 내역은 위 사진과 같은 머클 트리 구조를 하고 있습니다. 제일 아래의 거래 내역에서 시작해서 위로 갈수록 그에 대한 해시를 구하면서 점점 그 리프 노드(leaf node)의 숫자가 줄어들고 나중에는 그 모든 수천 개의 거래 데이터가 하나의 루트 해시로 정리가 되는 모양이죠. 따라서 이 하나의 루트 해시가 모든 거래를 압축한다고 할 수 있습니다. 이 루트 해시가 바로 블록 헤더에 포함이 됩니다. 여기에는 또한 이 블록을 완성한 마이너에게 주는 비트코인 리워드(현재 블록 리워드는 6.25 BTC) 거래도 포함되는데, 이 블록 리워드 거래를 '코인베이스 트랜잭션(coinbase transaction)'이라고 부릅니다. 유명 거래소 코인베이스의 이름이 여기서 따온거죠. 어쨌든, 누군가 블록에 담긴 거래 중 하나를 변조하려한다면, 루트 해시가 완전하게 바뀌어버리게 됩니다. 
 
@@ -120,7 +120,7 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 
 ## 비대칭 암호화와 전자서명
 
-![퍼블릭 키를 사용한 암호화. 이미지 출처: wikipedia.org](public-key-encryption.png)
+![퍼블릭 키를 사용한 암호화](public-key-encryption.png "퍼블릭 키를 사용한 암호화. 이미지 출처: wikipedia.org")
 
 Bob이 Alice에게 "Hello Alice!"라는 문자를 암호화해서 보내려고 합니다. 이 때 앨리스의 공개키(public key)를 이용해서 문자를 암호화(encrypt)하면 위 그림에서 보시는 것처럼, 알아볼 수 없는 해시가 생성됩니다. 이 암호를 받은 앨리스는 자신만이 알고 있는 개인키(private key)를 사용해서 암호를 해독(decrypt)하면 원문 "Hello Alice!"라는 문자를 볼 수 있게 됩니다.
 

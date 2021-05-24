@@ -36,9 +36,9 @@ tags:
 
 전자서명은 해시를 사용하는 방법(비트코인의 경우)과 해시를 사용하지 않는 방법이 있습니다. 여기서 중요한 부분은 해시를 사용해서 데이터를 압축시킬 수 있다는 것입니다.
 
-![Shyam Nandan Kumar et al. Review on Network Security and Cryptography](signature-1.png)
+![암호화](signature-1.png "출처: [Shyam Nandan Kumar et al](http://pubs.sciepub.com/iteces/3/1/1/iteces-3-1-1.pdf)")
 
-![Shyam Nandan Kumar et al. Review on Network Security and Cryptography](signature-2.png)
+![암호화](signature-2.png "출처: [Shyam Nandan Kumar et al](http://pubs.sciepub.com/iteces/3/1/1/iteces-3-1-1.pdf)")
 
 비트코인 주소는 공개키(public key)의 해시를 만들어서 크기를 작게 하고 더 안정성을 확보한 값입니다. 개인키(private key)는 Elliptic Curve Multiplication을 사용해서 공개키를 만들어내고, 공개키는 SHA-256와 RIPEMD160 알고리듬을 사용해서 공개키 해시를 만들어냅니다. 이를 Base58 인코딩을 통해서 크기를 더 줄인 것이 비트코인 주소입니다.
 
@@ -64,7 +64,7 @@ Adam Back은 1997년 [Hashcash 시스템](https://en.wikipedia.org/wiki/Hashcash
 
 앞서 잠깐 얘기했던 네트워크가 통제받는 사회에서의 포킹의 문제로 돌아가자면, 주 블록체인과 끊긴 상태에서 포킹이 된 채로 계속 채굴이 이루어지더라도 어떤 방식으로든간에 (뉴스 등의 미디어, 우편 등) 그 소식이 네트워크 바깥 현실 세계에서 전달될 것이고, 사람들은 의미없는 stale block의 채굴을 결국은 중단할 것이라는 것이 설명입니다. 마이너들이 이런 stable block을 완성하고 coinbase transaction으로 받은 비트코인은 사용을 할 수 없고(메인체인과 갈라져나왔기 때문에 거래의 흐름을 찾을 수 없겠지요), 또 비트코인 내부적으로 코인베이스 거래로 받은 비트코인은 100블록이 더 만들어질 때까지 사용이 불가능하도록 코드가 짜여져 있습니다.
 
-![출처: https://en.wikipedia.org/wiki/Blockchain#/media/File:Blockchain.svg](blocks.png)
+![](blocks.png "출처: [wikipedia](https://en.wikipedia.org/wiki/Blockchain#/media/File:Blockchain.svg)")
 
 만약, 중국같은 국가에서 국가적인 통제로 인터넷을 차단해서 비트코인 메인 네트워크와 연결이 끊어져어버리면 어떻게 될까요? 중국의 마이너들이 100블록 이상 포킹된 채로 채굴을 계속했다면 거기서 받은 비트코인은 가치가 있을까요? 비트코인은 이미 비트코인 캐시($BCH)로 하드 포크한 사례가 있습니다. 이 경우에는 누군가의 통제로 포킹을 한 것은 아니구요. 그렇게 포킹을 한 이후에도 사람들은 계속 비트코인 캐시를 돈을 주고 거래하고 있구요. 컨센서스가 계속 작동을 하고 있는 것이죠. 결국, 돈이라는 것은 사회적 합의이기 때문에 그렇게 포킹된 비트코인도 가치가 있다고 믿는 사람들이 여전히 존재한다면 포킹된 비트코인도 가치가 생기겠죠. 마찬가지로, 중국에서 포킹된 채로 비트코인 네트워크가 갈라져나간다면, 중국인들이 가치가 있다고 믿는 이상 '중국 비트코인'도 가치가 있을 거라고 봐야겠습니다.
 

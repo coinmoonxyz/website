@@ -46,7 +46,9 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              showCaptions: true,
+              quality: 70,
+              showCaptions: ["title"],
+              markdownCaptions: true, // caption uses MD, not raw text
             },
           },
           {
@@ -80,6 +82,12 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         output: "/",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
       },
     },
   ],

@@ -38,9 +38,9 @@
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
-  --fontWeight-bold: bold;
-  --fontWeight-extrabold: bold;
-  --fontWeight-black: bold;
+  --fontWeight-bold: 700;
+  --fontWeight-extrabold: 800;
+  --fontWeight-black: 900;
   --fontSize-root: 16px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
@@ -440,7 +440,7 @@ a.tag:hover {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
-.blog-post .gatsby-resp-image-figcaption {
+.blog-post .gatsby-resp-image-figcaption * {
   margin-top: var(--spacing-3);
   text-align: center;
   color: var(--color-text-light);
