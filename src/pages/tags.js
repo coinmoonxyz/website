@@ -4,8 +4,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 // Utilities
 import kebabCase from "lodash/kebabCase"
-
 import { Link, graphql } from "gatsby"
+import TagItem from "../components/tag-item"
 
 const TagsPage = ({
   data: {
@@ -25,11 +25,11 @@ const TagsPage = ({
       </p>
       <ul className="tags">
         {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tag/${kebabCase(tag.fieldValue)}/`} className="tag">
-              {tag.fieldValue} {tag.totalCount}
-            </Link>
-          </li>
+          <TagItem
+            key={tag.fieldValue}
+            tag={tag.fieldValue}
+            count={tag.totalCount}
+          />
         ))}
       </ul>
     </div>

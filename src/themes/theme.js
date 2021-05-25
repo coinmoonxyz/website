@@ -26,6 +26,27 @@ const theme = {
     "2.488rem",
     "2.986rem",
   ],
+  fontWeights: {
+    regular: 400,
+    medium: 500,
+    bold: 700,
+  },
+  spacing: [
+    0,
+    "0.25rem",
+    "0.5rem",
+    "0.75rem",
+    "1rem",
+    "1.25rem",
+    "1.5rem",
+    "2rem",
+    "2.5rem",
+    "3rem",
+    "4rem",
+    "5rem",
+    "6rem",
+    "8rem",
+  ],
 }
 
 export default theme

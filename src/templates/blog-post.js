@@ -2,8 +2,6 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 // import { css } from "@emotion/css"
 import moment from "moment" // for date
-// Utilities
-import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TagItem from "../components/tag-item"
