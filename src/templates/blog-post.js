@@ -6,6 +6,7 @@ import moment from "moment" // for date
 import kebabCase from "lodash/kebabCase"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import TagItem from "../components/tag-item"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -32,15 +33,9 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <ul className="tags">
-            {tags.map(tag => {
-              return (
-                <li key={tag}>
-                  <Link to={`/tag/${kebabCase(tag)}/`} className="tag">
-                    {tag}
-                  </Link>
-                </li>
-              )
-            })}
+            {tags.map(tag => (
+              <TagItem key={tag} tag={tag} />
+            ))}
           </ul>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <h2
@@ -51,7 +46,9 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="description"
           />
           <div className="dates">
-            <div className="date">{moment(new Date(date)).format("dddd MMM Do, YYYY")}</div>
+            <div className="date">
+              {moment(new Date(date)).format("dddd MMM Do, YYYY")}
+            </div>
             {updated && (
               <div className="date-updated">
                 last update: {moment(new Date(modifiedTime)).format("MMM Do")}

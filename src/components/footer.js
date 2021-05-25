@@ -1,15 +1,22 @@
 import React from "react"
 // import { css, jsx } from "@emotion/react"
+import styled from "@emotion/styled"
+
+const FooterStyled = styled.footer`
+  color: ${props => props.theme.colors.gray};
+  font-size: 13px;
+
+  a {
+    color: ${props => props.theme.colors.gray};
+  }
+`
 
 const Footer = props => {
   return (
-    <footer style={{ fontSize: "13px", color: "#666" }}>
+    <FooterStyled>
       <p>© {new Date().getFullYear()}, coinmoon.xyz</p>
       <p>
-        <a
-          href="https://www.privacypolicygenerator.info/live.php?token=9CiSLR52wnUDteo2kXQlNPQ98DCRHl9T"
-          style={{ color: "#666" }}
-        >
+        <a href="https://www.privacypolicygenerator.info/live.php?token=9CiSLR52wnUDteo2kXQlNPQ98DCRHl9T">
           Our Privacy Policy
         </a>
       </p>
@@ -39,7 +46,7 @@ const Footer = props => {
         링크를 통해 제품이나 서비스를 구매 시, 운영자는 약간의 리워드를
         받습니다.
       </p>
-    </footer>
+    </FooterStyled>
   )
 }
 

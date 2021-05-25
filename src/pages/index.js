@@ -2,9 +2,10 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 // Utilities
 import kebabCase from "lodash/kebabCase"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+// import { css } from '@emotion/css'
+import TagItem from "../components/tag-item"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,15 +29,9 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <ul className="tags">
-                    {tags.map(tag => {
-                      return (
-                        <li key={tag}>
-                          <Link to={`/tag/${kebabCase(tag)}/`} className="tag">
-                            {tag}
-                          </Link>
-                        </li>
-                      )
-                    })}
+                    {tags.map(tag => (
+                      <TagItem key={tag} tag={tag} />
+                    ))}
                   </ul>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
@@ -76,7 +71,7 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMMM D, YYYY")
           title
           description
           tags
