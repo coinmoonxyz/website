@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import kebabCase from "lodash/kebabCase"
-import { css, jsx } from "@emotion/react"
+import { css } from "@emotion/react"
 import styled from "@emotion/styled"
 import { space, layout, color } from "styled-system"
 

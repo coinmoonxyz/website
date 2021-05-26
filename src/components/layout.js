@@ -4,7 +4,8 @@ import { Link } from "gatsby"
 import { initializeAndTrack } from "gatsby-plugin-gdpr-cookies"
 import CookieConsent from "react-cookie-consent" // getCookieConsentValue, // Cookies,
 import { ThemeProvider } from "@emotion/react"
-import theme from "../themes/theme"
+import GlobalStyle from "../styles/global-style"
+import theme from "../styles/theme"
 import Footer from "./footer"
 
 const Layout = ({ location, title, children }) => {
@@ -21,6 +22,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <div className="global-wrapper" data-is-root-path={isRootPath}>
         <header className="global-header">{header}</header>
         <main>{children}</main>
