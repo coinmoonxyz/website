@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 
 const StyledTagList = styled.ul`
   margin-bottom: ${props => props.theme.spacing[4]};
+  padding: 0;
   list-style-type: none;
   li {
     display: inline-block;

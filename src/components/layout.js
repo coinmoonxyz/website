@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 
     > h1 {
       font-size: ${props => props.theme.fontSizes[3]};
-      color: ${props => props.theme.colors.logo};
+      color: ${props => props.theme.colors.text};
       margin: 0;
     }
   }

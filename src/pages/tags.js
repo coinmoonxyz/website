@@ -3,7 +3,20 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link, graphql } from "gatsby"
+import styled from "@emotion/styled"
 import TagItem from "../components/molecules/tag-item"
+
+// can't reuse TagList organism component because of different graphql data structure
+const TagList = styled.ul`
+  margin-bottom: ${props => props.theme.spacing[4]};
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    margin-bottom: ${props => props.theme.spacing[2]};
+    display: inline-block;
+  }
+`
 
 const TagsPage = ({
   data: {
@@ -21,7 +34,7 @@ const TagsPage = ({
       <p>
         <Link to="/">메인 페이지로 돌아가기</Link>
       </p>
-      <ul className="tags">
+      <TagList>
         {group.map(tag => (
           <TagItem
             key={tag.fieldValue}
@@ -29,7 +42,7 @@ const TagsPage = ({
             count={tag.totalCount}
           />
         ))}
-      </ul>
+      </TagList>
     </div>
   </Layout>
 )

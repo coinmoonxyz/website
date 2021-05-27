@@ -52,7 +52,6 @@ const theme = {
     "4rem",
     "5rem",
     "6rem",
-    "8rem",
   ],
 }
 

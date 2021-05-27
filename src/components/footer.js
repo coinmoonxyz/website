@@ -3,9 +3,14 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const FooterStyled = styled.footer`
+  padding: ${props => props.theme.spacing[6]} ${props => props.theme.spacing[0]};
   color: ${props => props.theme.colors.gray};
   font-size: 13px;
-
+  
+  p {
+    margin: ${props=>props.theme.spacing[2]} 0;
+  }
+  
   a {
     color: ${props => props.theme.colors.gray};
   }
