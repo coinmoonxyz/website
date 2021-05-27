@@ -2,8 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-// import { css } from '@emotion/css'
-import TagItem from "../components/tag-item"
+import TagItem from "../components/molecules/tag-item"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`

@@ -1,10 +1,10 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
-// import { css } from "@emotion/css"
 import moment from "moment" // for date
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import TagItem from "../components/tag-item"
+import TagItem from "../components/molecules/tag-item"
+import Kofi from '../components/organisms/kofi'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -59,25 +59,7 @@ const BlogPostTemplate = ({ data, location }) => {
           itemProp="articleBody"
         />
         <hr />
-        <div className="kofi" style={{ textAlign: "center" }}>
-          <p style={{ marginBottom: "1rem" }}>
-            후원금은 블로그 유지에 큰 도움이 됩니다. 감사합니다!
-          </p>
-          <a
-            href="https://ko-fi.com/V7V74G7ID"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              height="36"
-              style={{ border: 0, height: 36 }}
-              src="https://cdn.ko-fi.com/cdn/kofi4.png?v=2"
-              border="0"
-              alt="Buy Me a Coffee at ko-fi.com"
-            />
-          </a>
-        </div>
-        <footer>{/* <Bio /> */}</footer>
+        <Kofi />
       </article>
       <nav className="blog-post-nav">
         <ul

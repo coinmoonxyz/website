@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Link, graphql } from "gatsby"
-import TagItem from "../components/tag-item"
+import TagItem from "../components/molecules/tag-item"
 
 const TagsPage = ({
   data: {
