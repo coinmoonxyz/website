@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import TagItem from "../components/molecules/tag-item"
+import TagList from "../components/organisms/tag-list"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -25,11 +25,7 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <ul className="tags">
-                    {tags.map(tag => (
-                      <TagItem key={tag} tag={tag} />
-                    ))}
-                  </ul>
+                  <TagList tags={tags} />
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
                       <span itemProp="headline">{title}</span>

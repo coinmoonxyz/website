@@ -3,20 +3,48 @@ import { Link, graphql } from "gatsby"
 import moment from "moment" // for date
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import TagItem from "../components/molecules/tag-item"
-import Kofi from '../components/organisms/kofi'
+import Kofi from "../components/organisms/kofi"
+import TagList from '../components/organisms/tag-list'
+import styled from "@emotion/styled"
 
-const BlogPostTemplate = ({ data, location }) => {
+const Header = ({ data }) => {
   const post = data.markdownRemark
   const tags = post.frontmatter.tags
   tags.sort()
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
-
   const date = post.frontmatter.date // string
   const modifiedTime = data.allFile.edges[0].node.modifiedTime // string
-  // compare publish date vs. modified date: returns true if updated date is different from published
+  // compare publish date vs. modified date
   const updated = moment(new Date(modifiedTime)).isAfter(new Date(date))
+
+  return (
+    <header>
+      <TagList tags={tags} />
+      <h1 itemProp="headline">{post.frontmatter.title}</h1>
+      <h2
+        className="description"
+        dangerouslySetInnerHTML={{
+          __html: post.frontmatter.description,
+        }}
+        itemProp="description"
+      />
+      <div className="dates">
+        <div className="date">
+          {moment(new Date(date)).format("dddd MMM Do, YYYY")}
+        </div>
+        {updated && (
+          <div className="date-updated">
+            last update: {moment(new Date(modifiedTime)).format("MMM Do")}
+          </div>
+        )}
+      </div>
+    </header>
+  )
+}
+
+const BlogPostTemplate = ({ data, location }) => {
+  const post = data.markdownRemark
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const { previous, next } = data
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -29,31 +57,7 @@ const BlogPostTemplate = ({ data, location }) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
-          <ul className="tags">
-            {tags.map(tag => (
-              <TagItem key={tag} tag={tag} />
-            ))}
-          </ul>
-          <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <h2
-            className="description"
-            dangerouslySetInnerHTML={{
-              __html: post.frontmatter.description,
-            }}
-            itemProp="description"
-          />
-          <div className="dates">
-            <div className="date">
-              {moment(new Date(date)).format("dddd MMM Do, YYYY")}
-            </div>
-            {updated && (
-              <div className="date-updated">
-                last update: {moment(new Date(modifiedTime)).format("MMM Do")}
-              </div>
-            )}
-          </div>
-        </header>
+        <Header data={data} />
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

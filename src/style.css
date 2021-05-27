@@ -193,14 +193,6 @@ table td {
   margin-bottom: var(--spacing-4);
 }
 
-ul.tags {
-  margin-bottom: var(--spacing-2);
-  list-style-type: none;
-}
-ul.tags li {
-  display: inline-block;
-}
-
 /* All tags page*/
 .all-tags .tag {
   margin-bottom: var(--spacing-0);
