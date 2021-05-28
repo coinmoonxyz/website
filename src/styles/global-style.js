@@ -91,6 +91,10 @@ const GlobalStyle = props => (
         padding: 0;
       }
 
+      iframe {
+        background: ${theme.colors.lightgray};
+      }
+
       .gatsby-highlight {
         margin-bottom: ${theme.spacing[7]};
       }

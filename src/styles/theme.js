@@ -2,6 +2,7 @@ const theme = {
   breakpoints: ["42rem", "64rem"],
   colors: {
     gray: "#666",
+    lightgray: "#aaa",
     accent: "#d1dce5",
     heading: "#1a202c",
     headingBlack: "black",
