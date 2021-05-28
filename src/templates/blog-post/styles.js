@@ -1,11 +1,3 @@
-import * as React from "react"
-import { graphql } from "gatsby"
-import moment from "moment" // for date
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Kofi from "../components/organisms/kofi"
-import TagList from "../components/organisms/tag-list"
-import BlogPostNav from "../components/organisms/blog-post-nav"
 import styled from "@emotion/styled"
 
 const Title = styled.h1`
@@ -25,7 +17,7 @@ const Description = styled.h2`
   line-height: ${props => props.theme.lineHeights.normal};
 `
 
-const StyledDates = styled.div`
+const Dates = styled.div`
   display: flex;
   flex-direction: row;
   @media (max-width: ${props => props.theme.breakpoints[0]}) {
@@ -33,39 +25,26 @@ const StyledDates = styled.div`
   }
 `
 
-const StyledDate = styled.div`
+const Date = styled.div`
   margin-right: ${props => props.theme.spacing[3]};
   display: inline-block;
   font-size: ${props => props.theme.fontSizes[1]};
   font-family: ${props => props.theme.fonts.sansSerif};
 `
 
-const StyledDateUpdated = styled.div`
+const DateUpdated = styled.div`
   color: ${props => props.theme.colors.textLight};
   font-style: italic;
 `
 
-const Dates = ({ date, modifiedTime, updated }) => (
-  <StyledDates>
-    <StyledDate>
-      {moment(new Date(date)).format("dddd MMM Do, YYYY")}
-    </StyledDate>
-    {updated && (
-      <StyledDateUpdated>
-        last update: {moment(new Date(modifiedTime)).format("MMM Do")}
-      </StyledDateUpdated>
-    )}
-  </StyledDates>
-)
-
 const PostBody = styled.section`
   h2 {
-    font-size: ${props=>props.theme.fontSizes[3]};
-    font-weight: ${props=>props.theme.fontWeights.regular};
+    font-size: ${props => props.theme.fontSizes[3]};
+    font-weight: ${props => props.theme.fontWeights.regular};
   }
   h3 {
-    font-size: ${props=>props.theme.fontSizes[1]};
-    font-weight: ${props=>props.theme.fontWeights.regular};
+    font-size: ${props => props.theme.fontSizes[1]};
+    font-weight: ${props => props.theme.fontWeights.regular};
   }
 
   p {
@@ -119,7 +98,7 @@ const PostBody = styled.section`
   }
 
   img {
-    margin-bottom: ${props=>props.theme.spacing[7]};
+    margin-bottom: ${props => props.theme.spacing[7]};
   }
 
   hr {
@@ -189,116 +168,9 @@ const PostBody = styled.section`
   }
 `
 
-const StyledHeader = styled.header`
-  margin-bottom: ${props=>props.theme.spacing[12]};
-  /* background: ${props=>props.theme.colors.accent}; */
+const Header = styled.header`
+  margin-bottom: ${props => props.theme.spacing[12]};
+  /* background: ${props => props.theme.colors.accent}; */
 `
 
-const Header = ({ data }) => {
-  const post = data.markdownRemark
-  const tags = post.frontmatter.tags
-  tags.sort()
-  const date = post.frontmatter.date // string
-  const modifiedTime = data.allFile.edges[0].node.modifiedTime // string
-  // compare publish date vs. modified date
-  const updated = moment(new Date(modifiedTime)).isAfter(new Date(date))
-
-  return (
-    <StyledHeader>
-      <TagList tags={tags} />
-      <Title itemProp="headline">{post.frontmatter.title}</Title>
-      <Description itemProp="description">
-        {post.frontmatter.description}
-      </Description>
-      <Dates date={date} modifiedTime={modifiedTime} updated={updated} />
-    </StyledHeader>
-  )
-}
-
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
-
-  return (
-    <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article itemScope itemType="http://schema.org/Article">
-        <Header data={data} />
-        <PostBody
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <hr />
-        <Kofi />
-      </article>
-      <BlogPostNav previous={previous} next={next} />
-    </Layout>
-  )
-}
-
-export default BlogPostTemplate
-
-export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    markdownRemark(id: { eq: $id }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-        author {
-          id
-          description
-        }
-        tags
-      }
-    }
-
-    allFile(filter: { childMarkdownRemark: { id: { eq: $id } } }) {
-      edges {
-        node {
-          childMarkdownRemark {
-            frontmatter {
-              title
-              date
-            }
-          }
-          changeTime
-          modifiedTime(formatString: "MMMM DD, YYYY")
-        }
-      }
-    }
-
-    previous: markdownRemark(id: { eq: $previousPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-    next: markdownRemark(id: { eq: $nextPostId }) {
-      fields {
-        slug
-      }
-      frontmatter {
-        title
-      }
-    }
-  }
-`
+export { Title, Description, Dates, Date, DateUpdated, PostBody, Header }
