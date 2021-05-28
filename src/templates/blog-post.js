@@ -20,7 +20,7 @@ const Description = styled.h2`
   margin: 0;
   margin-bottom: ${props => props.theme.spacing[3]};
   color: ${props => props.theme.colors.text};
-  font-size: ${props => props.theme.fontSizes[2]};
+  font-size: ${props => props.theme.fontSizes[1]};
   font-weight: ${props => props.theme.fontWeights.regular};
   line-height: ${props => props.theme.lineHeights.normal};
 `
@@ -59,11 +59,15 @@ const Dates = ({ date, modifiedTime, updated }) => (
 )
 
 const PostBody = styled.section`
-  h1,
-  p,
-  li {
-    word-break: keep-all;
+  h2 {
+    font-size: ${props=>props.theme.fontSizes[3]};
+    font-weight: ${props=>props.theme.fontWeights.regular};
   }
+  h3 {
+    font-size: ${props=>props.theme.fontSizes[1]};
+    font-weight: ${props=>props.theme.fontWeights.regular};
+  }
+
   p {
     margin: 0;
     margin-bottom: ${props => props.theme.spacing[7]};
@@ -187,6 +191,7 @@ const PostBody = styled.section`
 
 const StyledHeader = styled.header`
   margin-bottom: ${props=>props.theme.spacing[12]};
+  /* background: ${props=>props.theme.colors.accent}; */
 `
 
 const Header = ({ data }) => {

@@ -10,7 +10,7 @@ const ListItem = styled.li`
     border: 1px solid ${props => props.theme.colors.tag};
     border-radius: ${props => props.theme.fontSizes[2]};
     padding: ${props => props.theme.spacing[1]} ${props => props.theme.spacing[2]};
-    font-size: ${props => props.theme.fontSizes[0]};
+    font-size: ${props => props.theme.fontSizes[props.fontSize]};
     color: ${props => props.theme.colors.text};
     text-decoration: none;
     &:hover {
@@ -20,7 +20,7 @@ const ListItem = styled.li`
 `
 
 const TagItem = props => (
-  <ListItem>
+  <ListItem fontSize={props.fontSize}>
     <Link to={`/tag/${kebabCase(props.tag)}/`}>
       {props.tag} {props.count}
     </Link>

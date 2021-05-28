@@ -1,10 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { Link, graphql } from "gatsby"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import PostListItem from "../components/organisms/post-list-item"
 
-// Components
-import { Link, graphql } from "gatsby"
+const PostList = styled.ol`
+  list-style: none;
+`
 
 const Tags = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -22,19 +26,11 @@ const Tags = ({ pageContext, data, location }) => {
       </p>
       <Link to="/tags">모든 태그 보기</Link>
 
-      <ul>
+      <PostList>
         {edges.map(({ node }) => {
-          const { title, description } = node.frontmatter
-          const slug = node.fields.slug
-          return (
-            <li key={slug}>
-              <Link to={slug}>
-                {title} - {description}
-              </Link>
-            </li>
-          )
+          return <PostListItem post={node} />
         })}
-      </ul>
+      </PostList>
     </Layout>
   )
 }
@@ -85,6 +81,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            date(formatString: "MMMM D, YYYY")
           }
         }
       }

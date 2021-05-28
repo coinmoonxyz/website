@@ -34,7 +34,7 @@ const theme = {
   },
   lineHeights: {
     none: 1,
-    tight: 1.1,
+    tight: 1.2,
     normal: 1.5,
     relaxed: 1.8,
   },

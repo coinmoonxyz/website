@@ -8,12 +8,14 @@ import TagItem from "../components/molecules/tag-item"
 
 // can't reuse TagList organism component because of different graphql data structure
 const TagList = styled.ul`
+  margin-top: ${props => props.theme.spacing[7]};
   margin-bottom: ${props => props.theme.spacing[4]};
   padding: 0;
   list-style-type: none;
+  font-size: ${props=>props.theme.fontSizes[2]};
 
   li {
-    margin-bottom: ${props => props.theme.spacing[2]};
+    margin-bottom: ${props => props.theme.spacing[6]};
     display: inline-block;
   }
 `

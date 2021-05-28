@@ -11,10 +11,10 @@ const StyledTagList = styled.ul`
   }
 `
 
-const TagList = ({ tags }) => (
+const TagList = ({ tags, fontSize }) => (
   <StyledTagList>
     {tags.map(tag => (
-      <TagItem key={tag} tag={tag} />
+      <TagItem key={tag} tag={tag} fontSize={fontSize}/>
     ))}
   </StyledTagList>
 )

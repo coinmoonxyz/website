@@ -46,7 +46,7 @@ const GlobalStyle = props => (
       h5,
       h6 {
         font-family: ${theme.fonts.sansSerif};
-        font-weight: ${theme.fontWeights.bold};
+        font-weight: ${theme.fontWeights.regular};
         margin-top: ${theme.spacing[9]};
         margin-bottom: ${theme.spacing[6]};
         line-height: ${theme.lineHeights.tight};
@@ -79,6 +79,12 @@ const GlobalStyle = props => (
         color: inherit;
       }
 
+      h1,
+      p,
+      li {
+        word-break: keep-all;
+      }
+
       ol,
       ul {
         margin: 0;
@@ -88,8 +94,6 @@ const GlobalStyle = props => (
       .gatsby-highlight {
         margin-bottom: ${theme.spacing[7]};
       }
-
-
     `}
   />
 )
