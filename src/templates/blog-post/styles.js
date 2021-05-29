@@ -69,16 +69,16 @@ const PostBody = styled.section`
   }
 
   ul ul {
-    margin: ${props => props.theme.spacing[0]};
+    margin: ${({ theme }) => theme.spacing[0]};
   }
 
   ul li,
   ol li {
-    padding-left: ${props => props.theme.spacing[0]};
+    padding-left: ${({ theme }) => theme.spacing[0]};
   }
 
   li > ul {
-    margin-left: ${props => props.theme.spacing[7]};
+    margin-left: ${({ theme }) => theme.spacing[7]};
   }
 
   li > p {
@@ -86,11 +86,11 @@ const PostBody = styled.section`
   }
 
   header {
-    margin-bottom: ${props => props.theme.spacing[10]};
+    margin-bottom: ${({ theme }) => theme.spacing[10]};
   }
 
   a {
-    color: ${props => props.theme.colors.text};
+    color: ${({ theme }) => theme.colors.text};
   }
 
   figure {
@@ -121,7 +121,8 @@ const PostBody = styled.section`
     margin-bottom: ${props => props.theme.spacing[7]};
     padding: 0;
     padding-left: ${props => props.theme.spacing[6]};
-    border-left: ${props => props.theme.spacing[1]} solid ${props => props.theme.colors.logo};
+    border-left: ${({ theme }) => theme.spacing[1]} solid
+      ${({ theme }) => theme.colors.logo};
     color: ${props => props.theme.colors.gray};
     font-size: ${props => props.theme.fontSizes[2]};
   }
@@ -144,7 +145,7 @@ const PostBody = styled.section`
 
   table th,
   table td {
-    padding: ${props => props.theme.spacing[1]} ${props => props.theme.spacing[2]};
+    padding: ${({ theme }) => theme.spacing[1]} ${({ theme }) => theme.spacing[2]};
   }
 
   table thead tr th {
@@ -169,8 +170,9 @@ const PostBody = styled.section`
 `
 
 const Header = styled.header`
-  margin-bottom: ${props => props.theme.spacing[12]};
-  /* background: ${props => props.theme.colors.accent}; */
+  margin-bottom: ${props => props.theme.spacing[8]};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
+  padding-bottom: ${({theme})=> theme.spacing[8]};
 `
 
 export { Title, Description, Dates, Date, DateUpdated, PostBody, Header }

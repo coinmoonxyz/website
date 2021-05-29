@@ -5,6 +5,7 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostListItem from "../components/organisms/post-list-item"
+import Divider from '../components/atoms/divider'
 
 const PostList = styled.ol`
   list-style: none;
@@ -25,7 +26,7 @@ const Tags = ({ pageContext, data, location }) => {
         <Link to="/">메인 페이지로 돌아가기</Link>
       </p>
       <Link to="/tags">모든 태그 보기</Link>
-
+      <Divider />
       <PostList>
         {edges.map(({ node }) => {
           return <PostListItem post={node} />

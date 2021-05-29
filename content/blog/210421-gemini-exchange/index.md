@@ -1,7 +1,6 @@
 ---
 title: 코인거래소 Gemini 장단점
 description: 코인입문자들에게 추천하는 거래소 Gemini, 이자도 받고 수수료도 아껴보자
-slug: "/gemini-exchange/"
 date: "2021-04-21"
 author: 코인문
 tags:

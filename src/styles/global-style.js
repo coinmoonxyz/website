@@ -28,15 +28,16 @@ const GlobalStyle = props => (
         color: ${theme.colors.text};
       }
 
-      hr {
-        background: ${theme.colors.accent};
-        height: 1px;
-        border: 0;
-      }
-
       a {
         color: ${theme.colors.primary};
         text-underline-offset: 2px;
+      }
+
+      hr {
+        margin: ${theme.spacing[7]} 0;
+        background: ${theme.colors.accent};
+        height: 1px;
+        border: 0;
       }
 
       h1,

@@ -1,18 +1,17 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import moment from "moment" // for date
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Kofi from "../../components/organisms/kofi"
 import TagList from "../../components/organisms/tag-list"
 import BlogPostNav from "../../components/organisms/blog-post-nav"
-import * as S from './styles'
+import Divider from '../../components/atoms/divider'
+import * as S from "./styles"
 
 const Dates = ({ date, modifiedTime, updated }) => (
   <S.Dates>
-    <S.Date>
-      {moment(new Date(date)).format("dddd MMM Do, YYYY")}
-    </S.Date>
+    <S.Date>{moment(new Date(date)).format("dddd MMM Do, YYYY")}</S.Date>
     {updated && (
       <S.DateUpdated>
         last update: {moment(new Date(modifiedTime)).format("MMM Do")}
@@ -59,7 +58,7 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <hr />
+        <Divider />
         <Kofi />
       </article>
       <BlogPostNav previous={previous} next={next} />

@@ -1,7 +1,6 @@
 ---
 title: 비트코인으로 캐시백되는 마스터카드 출시 예정
 description: 이제는 항공사 마일리지를 넘어서 코인 리워드를 받는 시대
-slug: "/gemini-credit-card/"
 date: "2021-04-28"
 author: 코인문
 tags:

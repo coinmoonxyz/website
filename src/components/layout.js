@@ -9,7 +9,7 @@ import styled from "@emotion/styled"
 
 const Wrapper = styled.div`
   margin: ${props => props.theme.spacing[0]} auto;
-  max-width: 42rem; // --maxWidth-2xl
+  max-width: 46rem; // --maxWidth-2xl
   padding: ${props => props.theme.spacing[4]} ${props => props.theme.spacing[5]};
 `
 
