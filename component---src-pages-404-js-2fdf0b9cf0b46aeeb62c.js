@@ -1,0 +1,2 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[883],{9616:function(t,e,a){"use strict";a.r(e);a(7294);var i=a(8764),s=a(3751),n=a(3431);e.default=function(t){var e=t.data,a=t.location,l=e.site.siteMetadata.title;return(0,n.jsx)(i.Z,{location:a,title:l},(0,n.jsx)(s.Z,{title:"404: Not Found"}),(0,n.jsx)("h1",null,"404: 페이지를 찾을 수 없습니다. 😢"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-2fdf0b9cf0b46aeeb62c.js.map
