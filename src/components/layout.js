@@ -9,15 +9,7 @@ import styled from "@emotion/styled"
 
 const Wrapper = styled.div`
   margin: auto;
-  /* padding: ${props => props.theme.spacing[4]} ${props => props.theme.spacing[5]}; */
-  min-width: 320px;
-  /* max-width: ${({ theme }) => theme.widths.full}; */
-
-  /* outline: 1px solid red; */
-
-  @media(max-width: ${({theme})=>theme.widths.full}) {
-    /* max-width: ${({ theme }) => theme.widths.main}; */
-  }
+  min-width: 280px;
 `
 
 const Layout = ({ location, title, children }) => {

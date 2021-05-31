@@ -6,6 +6,7 @@ import PostListItem from "../components/organisms/post-list-item"
 import styled from "@emotion/styled"
 
 const Grid = styled.div`
+  padding-top: ${props => props.theme.spacing[5]};
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
 

@@ -56,11 +56,12 @@ const Header = styled.header`
   margin-bottom: ${props => props.theme.spacing[8]};
   border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
   padding: 0 ${props => props.theme.spacing[5]};
+  padding-top: ${props => props.theme.spacing[5]};
   padding-bottom: ${({ theme }) => theme.spacing[8]};
 
   grid-column: 2 / span 2;
 
-  /* background: ${({ theme }) => theme.colors.postHeaderBg}; */
+  /* background: ${({ theme }) => theme.colors.siteHeaderBg}; */
 `
 
 const PostBody = styled.section`
@@ -88,9 +89,11 @@ const PostBody = styled.section`
     margin-bottom: ${props => props.theme.spacing[9]};
     margin-right: ${props => props.theme.spacing[0]};
     padding: ${props => props.theme.spacing[0]};
+
     list-style-position: outside;
     list-style-image: none;
     line-height: ${props => props.theme.lineHeights.relaxed};
+
     @media (max-width: ${({ theme }) => theme.widths.full}) {
       list-style-position: inside;
     }

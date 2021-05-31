@@ -7,6 +7,8 @@ import styled from "@emotion/styled"
 import TagItem from "../components/molecules/tag-item"
 
 const Grid = styled.div`
+  padding-top: ${props => props.theme.spacing[5]};
+  
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
       theme,
@@ -26,6 +28,10 @@ const Wrapper = styled.div`
 
   h1 {
     margin-top: 0;
+  }
+
+  > p {
+    margin-bottom: ${({ theme }) => theme.spacing[7]};
   }
 `
 

@@ -3,6 +3,7 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const FooterStyled = styled.footer`
+  margin-bottom: ${({ theme }) => theme.spacing[6]};
   color: ${props => props.theme.colors.gray};
   font-size: ${({ theme }) => theme.fontSizes[0]};
 

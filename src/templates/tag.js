@@ -8,6 +8,8 @@ import PostListItem from "../components/organisms/post-list-item"
 import Divider from "../components/atoms/divider"
 
 const Grid = styled.div`
+  padding-top: ${props => props.theme.spacing[5]};
+  
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
       theme,
