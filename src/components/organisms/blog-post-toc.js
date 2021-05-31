@@ -4,6 +4,7 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 
 const Aside = styled.aside`
+  margin-bottom: ${({ theme }) => theme.spacing[12]};
   grid-column: 2;
   grid-row: 2;
   position: sticky;
@@ -16,9 +17,9 @@ const Aside = styled.aside`
   }
 
   li {
-    /* margin: ${({theme})=>theme.spacing[1]} 0; */
+    margin: ${({ theme }) => theme.spacing[3]} 0;
     font-size: ${({ theme }) => theme.fontSizes[1]};
-    line-height: ${({ theme }) => theme.lineHeights.relaxed};
+    line-height: ${({ theme }) => theme.lineHeights.normal};
   }
 
   @media (max-width: ${({ theme }) => theme.widths.full}) {
