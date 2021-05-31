@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
-// import TagList from "./tag-list"
 import styled from "@emotion/styled"
+import { css } from "@emotion/react"
 
 const Article = styled.article`
   margin-bottom: ${props => props.theme.spacing[7]};

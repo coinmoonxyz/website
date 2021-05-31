@@ -27,8 +27,8 @@ const Aside = styled.aside`
   }
 `
 
-const List = styled.ul`
-  list-style-type: none;
+const List = styled.ol`
+  /* list-style-type: none; */
 
   li a {
     text-decoration: none;

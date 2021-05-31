@@ -210,6 +210,8 @@ const Header = styled.header`
   margin-bottom: ${props => props.theme.spacing[8]};
   border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
   padding-bottom: ${({ theme }) => theme.spacing[8]};
+
+  grid-column: 1 / -1;
 `
 
 export {
