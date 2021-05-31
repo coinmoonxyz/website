@@ -1,0 +1,2 @@
+(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[883],{9616:function(t,e,s){"use strict";s.r(e);s(7294);var a=s(8764),n=s(3751),u=s(3431);e.default=function(t){var e=t.data,s=t.location,i=e.site.siteMetadata.title;return(0,u.jsx)(a.Z,{location:s,title:i},(0,u.jsx)(n.Z,{title:"404: Not Found"}),(0,u.jsx)("h1",null,"404: Not Found"),(0,u.jsx)("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-1c7799ff25e0fbc8c88c.js.map
