@@ -58,6 +58,7 @@ const theme = {
   widths: {
     main: "720px",
     full: "1100px",
+    aside: "380px", // full - main
   },
 }
 

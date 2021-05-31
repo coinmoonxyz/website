@@ -5,7 +5,22 @@ import Seo from "../components/seo"
 import PostListItem from "../components/organisms/post-list-item"
 import styled from "@emotion/styled"
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
+
+  > * {
+    grid-column: 2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.widths.full}) {
+    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+  }
+`
+
 const PostList = styled.ol`
+  padding: 0 ${props => props.theme.spacing[5]};
+
   list-style: none;
 `
 
@@ -16,11 +31,13 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="코인 가이드" />
-      <PostList>
-        {posts.map(post => (
-          <PostListItem post={post} key={post.id} />
-        ))}
-      </PostList>
+      <Grid>
+        <PostList>
+          {posts.map(post => (
+            <PostListItem post={post} key={post.id} />
+          ))}
+        </PostList>
+      </Grid>
     </Layout>
   )
 }

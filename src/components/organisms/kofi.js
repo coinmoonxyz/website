@@ -3,11 +3,11 @@ import React from "react"
 import styled from "@emotion/styled"
 
 const StyledKofi = styled.div`
-  margin-top: ${props => props.theme.spacing[8]};
   margin-bottom: ${props => props.theme.spacing[8]};
-  text-align: center;
 
-  grid-column: 1;
+  padding: 0 ${props => props.theme.spacing[5]};
+
+  text-align: center;
 `
 
 const Kofi = () => (

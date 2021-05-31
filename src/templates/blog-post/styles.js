@@ -39,27 +39,30 @@ const DateUpdated = styled.div`
 
 const ArticleGrid = styled.article`
   display: grid;
-  grid-template-columns: min(${({ theme }) => theme.widths.main}, 100%) 1fr;
-  grid-gap: 0 ${({ theme }) => theme.spacing[10]};
-  /* margin: auto; */
+  grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
+      theme,
+    }) => theme.widths.aside} 1fr;
 
   > * {
-    grid-column: 1;
+    grid-column: 2;
   }
 
   @media (max-width: ${({ theme }) => theme.widths.full}) {
-    max-width: ${({ theme }) => theme.widths.main};
-    grid-template-columns: min(${({ theme }) => theme.widths.main}, 100%);
-    grid-gap: 0;
-
-    > * {
-      grid-column: 1;
-    }
+    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
   }
 `
 
+const Header = styled.header`
+  margin-bottom: ${props => props.theme.spacing[8]};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
+  padding: 0 ${props => props.theme.spacing[5]};
+  padding-bottom: ${({ theme }) => theme.spacing[8]};
+
+  grid-column: 2 / span 2;
+`
+
 const PostBody = styled.section`
-  grid-column: 1;
+  padding: 0 ${props => props.theme.spacing[5]};
 
   h2 {
     font-size: ${props => props.theme.fontSizes[3]};
@@ -204,14 +207,6 @@ const PostBody = styled.section`
       padding-left: ${props => props.theme.spacing[4]};
     }
   }
-`
-
-const Header = styled.header`
-  margin-bottom: ${props => props.theme.spacing[8]};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
-  padding-bottom: ${({ theme }) => theme.spacing[8]};
-
-  grid-column: 1 / -1;
 `
 
 export {

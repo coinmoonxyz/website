@@ -4,8 +4,9 @@ import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 
 const Aside = styled.aside`
+  margin-left: ${({ theme }) => theme.spacing[10]};
   margin-bottom: ${({ theme }) => theme.spacing[12]};
-  grid-column: 2 !important;
+  grid-column: 3 !important; /* BAD */
   grid-row: 2;
   position: sticky;
   top: ${({ theme }) => theme.spacing[7]};
