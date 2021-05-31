@@ -14,7 +14,7 @@ tags:
 
 개인마다 위험을 감내할 수 있는 저항선이 다를 텐데요, 대규모 투자회사들은 어떤 코인에 투자하는지 궁금해지기도 합니다. 그래서 일찍부터 디지털화폐에 투자를 시작한 미국 투자/자산관리 회사 [그레이스케일(Grayscale)](http://grayscale.com/)이 보유하고 있는 코인 리스트를 살펴봤습니다. 그레이스케일은 Digital Currency Group이 2013년에 만든 디지털화폐 투자/관리 회사이며 현재 미국 최대규모를 자랑합니다. 모기업인 Digital Currency Group이 가진 비트코인은 [현재 유통 중인 총 비트코인의 3% 이상 되는 큰 규모](https://decrypt.co/69768/digital-currency-group-buying-750-million-in-gbtc-shares)랍니다. 비트코인 트러스트의 AUM(관리자산)의 총액은 $37.8 billion입니다.
 
-![grayscale coins](all-products.png "출처: [grayscale.com](https://grayscale.com)")
+![grayscale coins](all-products.png "출처: https://grayscale.com")
 
 트러스트에 포함된 코인에는 **비트코인**이나 **이더리움**같은 잘 알려진 코인들도 있고 (이 둘은 투자가 마감되었다고 합니다), **라이트코인**, **비트코인 캐시**, **이더리움 클래식**, 제가 [이전 포스팅](../brave-browser/)에서 소개한 Brave Browser의 **$BAT** 코인, 온라인 게임 플랫폼인 디센트럴렌드의 **$MANA**, 블록체인에 오라클을 제공하는 체인링크의 **$LINK**, 분산화 파일 저장 사업을 하는 파일코인의 **$FIL**, 분산화 동영상 제공 플랫폼 라이브피어의 **$LVP**, 블록체인 기반 결제 시스템 스텔라 루멘스 **$XLM**, 익명성을 보장하는 지캐시의 **$ZEC**와 호라이젠의 **$ZEN** 등의 종목들이 포함되어있습니다. 여기 포함된 대부분 코인들의 가격들이 지난 1년간 엄청나게 올랐죠. 지난 일주일 동안 괄목할만한 상승세를 탄 $ETH의 지난 1년 수익률은 1400% 정도이니 놀라울 뿐입니다. 직접 목록을 보실 분들은 [웹사이트](https://grayscale.com/products/)에 방문해보세요. 각 코인별 AUM(관리자산)규모도 나와있어서 참고할만 합니다.
 

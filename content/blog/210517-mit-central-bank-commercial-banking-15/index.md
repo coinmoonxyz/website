@@ -108,7 +108,7 @@ tags:
 ### 머니 플라워
 머니플라워 도표의 네가지 기준--windely accessible, digital, central bank issued, token-based--을 통해서 다른 종류의 화폐들을 쉽게 분류해볼 수 있습니다.
 
-![money flower](money-flower.png "출처: [bis.org](https://www.bis.org/publ/bppdf/bispap101.pdf)")
+![money flower](./money-flower.png "출처: https://www.bis.org/publ/bppdf/bispap101.pdf")
 
 ### 공공부문 디지털화폐 사업
 - 두바이: emCash project

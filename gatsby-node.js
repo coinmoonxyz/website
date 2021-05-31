@@ -6,15 +6,28 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
-  const blogPost = path.resolve(`./src/templates/blog-post/index.js`)
+  const blogPostTemplate = path.resolve(`./src/templates/blog-post/index.js`)
   // tag page template
   const tagTemplate = path.resolve(`./src/templates/tag.js`)
 
   // Get all markdown blog posts sorted by date
+
+  // allMarkdownRemark(
+  //   sort: { fields: [frontmatter___date], order: ASC }
+  //   limit: 1000
+  // ) {
+  //   nodes {
+  //     id
+  //     fields {
+  //       slug
+  //     }
+  //   }
+  // }
+
   const result = await graphql(
     `
       {
-        allMarkdownRemark(
+        allMdx(
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
@@ -26,7 +39,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
 
-        tagsGroup: allMarkdownRemark(limit: 2000) {
+        tagsGroup: allMdx(limit: 2000) {
           group(field: frontmatter___tags) {
             fieldValue
           }
@@ -43,11 +56,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     return
   }
 
-  const posts = result.data.allMarkdownRemark.nodes
-
-  // Create blog posts pages
-  // But only if there's at least one markdown file found at "content/blog" (defined in gatsby-config.js)
-  // `context` is available in the template as a prop and as a variable in GraphQL
+  const posts = result.data.allMdx.nodes
 
   if (posts.length > 0) {
     posts.forEach((post, index) => {
@@ -56,7 +65,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
       createPage({
         path: post.fields.slug,
-        component: blogPost,
+        component: blogPostTemplate,
         context: {
           id: post.id,
           previousPostId,
@@ -84,7 +93,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
+  // if (node.internal.type === `MarkdownRemark`) {
+  //   const value = createFilePath({ node, getNode })
+
+  //   // reformat folder name for slug (remove date portion)
+  //   const words = value.split("-")
+  //   words.shift() // remove first element
+  //   const newv = "/" + words.join("-")
+
+  //   createNodeField({
+  //     name: `slug`,
+  //     node,
+  //     value: newv,
+  //   })
+  // }
+
+  if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
 
     // reformat folder name for slug (remove date portion)

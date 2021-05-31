@@ -14,7 +14,7 @@ const PostList = styled.ol`
 const Tags = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
+  const { edges, totalCount } = data.allMdx
   const tagHeader = `“${tag}” 태그로 ${totalCount}건이 검색되었습니다.`
 
   return (
@@ -41,7 +41,7 @@ Tags.propTypes = {
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allMdx: PropTypes.shape({
       totalCount: PropTypes.number.isRequired,
       edges: PropTypes.arrayOf(
         PropTypes.shape({
@@ -68,7 +68,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }

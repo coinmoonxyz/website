@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import TagList from "./tag-list"
+// import TagList from "./tag-list"
 import styled from "@emotion/styled"
 
 const Article = styled.article`
@@ -14,7 +14,7 @@ const Article = styled.article`
   h2 {
     margin-bottom: ${props => props.theme.spacing[2]};
     margin-top: ${props => props.theme.spacing[0]};
-    font-size: ${props => props.theme.fontSizes[4]};
+    font-size: ${props => props.theme.fontSizes[3]};
     font-weight: ${props => props.theme.fontWeights.regular};
     color: ${props => props.theme.colors.black};
   }
@@ -33,7 +33,7 @@ const PostListItem = ({ post }) => {
     <li key={post.fields.slug}>
       <Article itemScope itemType="http://schema.org/Article">
         <header>
-          {tags && <TagList tags={tags} fontSize={0} />}
+          {/* {tags && <TagList tags={tags} fontSize={0} />} */}
           <h2>
             <Link to={post.fields.slug} itemProp="url">
               <span itemProp="headline">{title}</span>

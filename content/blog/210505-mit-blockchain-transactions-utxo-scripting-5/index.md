@@ -35,7 +35,7 @@ tags:
 
 블록의 고유번호와 그 블록에 속한 거래의 고유번호만 알면 블록체인 전체에서 어떤 거래내역도 찾을 수 있습니다. 
 
-![transaction format](transaction.png "CC BY-NC-SA. 출처: [ocw.mit.edu](https://ocw.mit.edu/15-S12F18)")
+![transaction format](transaction.png "CC BY-NC-SA. 출처: https://ocw.mit.edu/15-S12F18")
 
 거래에는 여러 입력값과 여러 출력값이 존재할 수도 있습니다. 예를 들어 다른 경로를 거쳐 나에게 들어온 코인들 여럿을 합쳐서 다른 여러 사람에게 나눠서 보낼 수 있습니다. 거래를 하고 남는 코인 잔액은 내 지갑으로 다시 돌려보냅니다. 잔액의 일부는 채굴기에게 수수료로 지불할 수 있습니다. 다시 정리하면,
 

@@ -91,7 +91,7 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 
 ### 블록 헤더
 
-![bitcoin block header](block-header.png "출처: [비트코인 화이트페이퍼](https://bitcoin.org/bitcoin.pdf)")
+![bitcoin block header](block-header.png "출처: https://bitcoin.org/bitcoin.pdf")
 
 각각의 블록 헤더에 담기는 정보는 다음과 같습니다:
 
@@ -102,7 +102,7 @@ Cryptographic Primitive라는 용어가 나옵니다. [위키피디아](https://
 - **Difficulty target:** 비트코인은 마이닝을 하는 컴퓨터 자원이 더 커질수록 블록 해시를 푸는 문제를 더 어렵게 만들도록 디자인되어있습니다. 그래서 마이너가 늘어나도 항상 한 블록을 완성하는데 10분 정도가 걸립니다. 
 - **Nonce:** 논스는 무작위 수이며, 한번만 사용되는 수를 말합니다. 무작위의 수를 뽑았는데, 같은 수가 나와버리면 어떡하죠? 앞에서 본 것처럼 확률적으로 극히 드문 경우입니다. 저와 여러분이 백사장에서 모래 한 알을 주웠는데, 그게 같을 모래알일 활률이 얼마나 될까요?
 
-![bitcoin block explorer](block-explorer.png "[Bitcoin.com](https://bitcoin.com)에서 제공하는 블록 익스플로러")
+![bitcoin block explorer](block-explorer.png "Bitcoin.com에서 제공하는 블록 익스플로러")
 
 ### 머클 트리
 

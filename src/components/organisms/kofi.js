@@ -6,6 +6,8 @@ const StyledKofi = styled.div`
   margin-top: ${props => props.theme.spacing[8]};
   margin-bottom: ${props => props.theme.spacing[8]};
   text-align: center;
+
+  grid-column: 1;
 `
 
 const Kofi = () => (

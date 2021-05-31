@@ -8,7 +8,7 @@ tags:
 - 소식
 ---
 
-![이미지 출처 gemini.com](1.jpg)
+![이미지 출처 gemini.com](./1.jpg "이미지 출처 gemini.com")
 
 제미나이(Gemini)가 마스터카드랑 파트너로 비트코인(ETH나 UNI, DAI 등 다른 30여개 코인 중에서도 고를 수 있음)으로 캐시백되는 카드가 올 여름에 나온다고 [디크립트 기사](https://decrypt.co/69181/gemini-crypto-mastercard-unwrapped-summer)에 나왔어요.
 

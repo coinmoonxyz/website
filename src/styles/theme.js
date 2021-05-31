@@ -20,6 +20,7 @@ const theme = {
   },
   fontSizes: [
     "0.75rem",
+    "0.875rem",
     "1rem",
     "1.2rem",
     "1.44rem",
@@ -37,7 +38,7 @@ const theme = {
     none: 1,
     tight: 1.2,
     normal: 1.5,
-    relaxed: 1.8,
+    relaxed: 1.85,
   },
   spacing: [
     0,
@@ -54,6 +55,10 @@ const theme = {
     "5rem",
     "6rem",
   ],
+  widths: {
+    main: "720px",
+    full: "1100px",
+  },
 }
 
 export default theme

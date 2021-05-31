@@ -86,7 +86,7 @@ tags:
 
 [State of the Dapps 웹사이트](https://www.stateofthedapps.com/)에 현재 뎁스 관련 현황들이 잘 정리되어있습니다.
 
-![dapps](dapps.png "21년 5월 기준. 출처: [stateofthedapps.com](https://stateofthedapps.com)")
+![dapps](dapps.png "21년 5월 기준. 출처: https://stateofthedapps.com")
 
 ### 가상통화공개(ICO; Initial Coin Offerings)
 

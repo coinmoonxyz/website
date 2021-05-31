@@ -8,7 +8,6 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -38,31 +37,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 800,
-              quality: 70,
-              showCaptions: ["title"],
-              markdownCaptions: true, // caption uses MD, not raw text
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -88,13 +63,42 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve("./src/templates/blog-post/index.js"),
+        },
+        puglins: [`gatsby-remark-images`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              // offsetY: `100px`, // doesn't work
+              isIconAfterHeader: true,
+              elements: [`h2`, `h3`],
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+              quality: 70,
+              showCaptions: ["title"],
+              // markdownCaptions: true, // caption uses MD, not raw text
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
       },
     },
     {
       resolve: `gatsby-plugin-emotion`,
       options: {
-        // Accepts the following options, all of which are defined by `@emotion/babel-plugin` plugin.
-        // The values for each key in this example are the defaults the plugin uses.
         sourceMap: true,
         autoLabel: "dev-only",
         labelFormat: `[local]`,
@@ -102,8 +106,8 @@ module.exports = {
       },
     },
   ],
-  mapping: {
-    // map author to author.yaml
-    "MarkdownRemark.frontmatter.author": `AuthorYaml`,
-  },
+  // mapping: {
+  //   // map author to author.yaml
+  //   "Mdx.frontmatter.author": `AuthorYaml`,
+  // },
 }

@@ -19,11 +19,12 @@ const GlobalStyle = props => (
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         overflow-y: scroll; /* force scrollbar to appear to avoid layout shift */
+        /* scroll-behavior: smooth; */
       }
 
       body {
         font-family: ${theme.fonts.sansSerif};
-        font-size: ${theme.fontSizes[1]};
+        font-size: ${theme.fontSizes[2]};
         background: rgb(240, 240, 236);
         color: ${theme.colors.text};
       }
@@ -67,7 +68,7 @@ const GlobalStyle = props => (
       h4,
       h5,
       h6 {
-        font-size: ${theme.fontSizes[1]};
+        font-size: ${theme.fontSizes[2]};
       }
 
       h1 > a,

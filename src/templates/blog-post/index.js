@@ -1,12 +1,15 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import moment from "moment" // for date
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
 import Kofi from "../../components/organisms/kofi"
 import TagList from "../../components/organisms/tag-list"
 import BlogPostNav from "../../components/organisms/blog-post-nav"
-import Divider from '../../components/atoms/divider'
+import BlogPostToc from "../../components/organisms/blog-post-toc"
+import Divider from "../../components/atoms/divider"
+import styled from "@emotion/styled"
 import * as S from "./styles"
 
 const Dates = ({ date, modifiedTime, updated }) => (
@@ -21,7 +24,7 @@ const Dates = ({ date, modifiedTime, updated }) => (
 )
 
 const Header = ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const tags = post.frontmatter.tags
   tags.sort()
   const date = post.frontmatter.date // string
@@ -42,9 +45,11 @@ const Header = ({ data }) => {
 }
 
 const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+
+  console.log(post.tableOfContents.items)
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -52,15 +57,15 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article itemScope itemType="http://schema.org/Article">
+      <S.ArticleGrid itemScope itemType="http://schema.org/Article">
         <Header data={data} />
-        <S.PostBody
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
-        <Divider />
+        {post.tableOfContents.items !== undefined && <BlogPostToc toc={post.tableOfContents} />}
+        <S.PostBody itemProp="articleBody">
+          <MDXRenderer>{post.body}</MDXRenderer>
+          <Divider />
+        </S.PostBody>
         <Kofi />
-      </article>
+      </S.ArticleGrid>
       <BlogPostNav previous={previous} next={next} />
     </Layout>
   )
@@ -79,26 +84,24 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(id: { eq: $id }) {
+    mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        author {
-          id
-          description
-        }
+        author
         tags
       }
+      tableOfContents(maxDepth: 2)
     }
 
-    allFile(filter: { childMarkdownRemark: { id: { eq: $id } } }) {
+    allFile(filter: { childMdx: { id: { eq: $id } } }) {
       edges {
         node {
-          childMarkdownRemark {
+          childMdx {
             frontmatter {
               title
               date
@@ -110,7 +113,7 @@ export const pageQuery = graphql`
       }
     }
 
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: mdx(id: { eq: $previousPostId }) {
       fields {
         slug
       }
@@ -118,7 +121,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: mdx(id: { eq: $nextPostId }) {
       fields {
         slug
       }

@@ -12,7 +12,7 @@ const Description = styled.h2`
   margin: 0;
   margin-bottom: ${props => props.theme.spacing[3]};
   color: ${props => props.theme.colors.text};
-  font-size: ${props => props.theme.fontSizes[1]};
+  font-size: ${props => props.theme.fontSizes[2]};
   font-weight: ${props => props.theme.fontWeights.regular};
   line-height: ${props => props.theme.lineHeights.normal};
 `
@@ -37,13 +37,36 @@ const DateUpdated = styled.div`
   font-style: italic;
 `
 
+const ArticleGrid = styled.article`
+  display: grid;
+  grid-template-columns: min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+  grid-gap: 0 ${({ theme }) => theme.spacing[10]};
+  /* margin: auto; */
+
+  > * {
+    grid-column: 1;
+  }
+
+  @media (max-width: ${({ theme }) => theme.widths.full}) {
+    max-width: ${({ theme }) => theme.widths.main};
+    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+    grid-gap: 0;
+
+    > * {
+      grid-column: 2;
+    }
+  }
+`
+
 const PostBody = styled.section`
+  grid-column: 1;
+
   h2 {
     font-size: ${props => props.theme.fontSizes[3]};
     font-weight: ${props => props.theme.fontWeights.regular};
   }
   h3 {
-    font-size: ${props => props.theme.fontSizes[1]};
+    font-size: ${props => props.theme.fontSizes[2]};
     font-weight: ${props => props.theme.fontWeights.regular};
   }
 
@@ -63,7 +86,7 @@ const PostBody = styled.section`
     list-style-position: outside;
     list-style-image: none;
     line-height: ${props => props.theme.lineHeights.relaxed};
-    @media (max-width: ${props => props.theme.breakpoints[0]}) {
+    @media (max-width: ${({ theme }) => theme.widths.full}) {
       list-style-position: inside;
     }
   }
@@ -93,8 +116,21 @@ const PostBody = styled.section`
     color: ${({ theme }) => theme.colors.text};
   }
 
+  a.anchor {
+    position: relative;
+    left: 4px;
+
+    svg {
+      fill: ${({ theme }) => theme.colors.lightgray};
+    }
+  }
+
   figure {
     margin: 0;
+  }
+  figcaption {
+    text-align: center;
+    color: ${({ theme }) => theme.colors.gray};
   }
 
   img {
@@ -145,7 +181,8 @@ const PostBody = styled.section`
 
   table th,
   table td {
-    padding: ${({ theme }) => theme.spacing[1]} ${({ theme }) => theme.spacing[2]};
+    padding: ${({ theme }) => theme.spacing[1]}
+      ${({ theme }) => theme.spacing[2]};
   }
 
   table thead tr th {
@@ -155,7 +192,7 @@ const PostBody = styled.section`
     border-bottom: 1px solid ${props => props.theme.colors.accent};
   }
 
-  @media (max-width: ${props => props.theme.breakpoints[0]}) {
+  @media (max-width: ${({ theme }) => theme.widths.full}) {
     ul > li p {
       /* line break fix */
       display: inline;
@@ -172,7 +209,16 @@ const PostBody = styled.section`
 const Header = styled.header`
   margin-bottom: ${props => props.theme.spacing[8]};
   border-bottom: 1px solid ${({ theme }) => theme.colors.accent};
-  padding-bottom: ${({theme})=> theme.spacing[8]};
+  padding-bottom: ${({ theme }) => theme.spacing[8]};
 `
 
-export { Title, Description, Dates, Date, DateUpdated, PostBody, Header }
+export {
+  Title,
+  Description,
+  Dates,
+  Date,
+  DateUpdated,
+  PostBody,
+  ArticleGrid,
+  Header,
+}
