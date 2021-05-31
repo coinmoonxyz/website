@@ -49,11 +49,11 @@ const ArticleGrid = styled.article`
 
   @media (max-width: ${({ theme }) => theme.widths.full}) {
     max-width: ${({ theme }) => theme.widths.main};
-    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+    grid-template-columns: min(${({ theme }) => theme.widths.main}, 100%);
     grid-gap: 0;
 
     > * {
-      grid-column: 2;
+      grid-column: 1;
     }
   }
 `

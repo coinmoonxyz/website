@@ -5,7 +5,7 @@ import { css } from "@emotion/react"
 
 const Aside = styled.aside`
   margin-bottom: ${({ theme }) => theme.spacing[12]};
-  grid-column: 2;
+  grid-column: 2 !important;
   grid-row: 2;
   position: sticky;
   top: ${({ theme }) => theme.spacing[7]};
@@ -38,11 +38,7 @@ const List = styled.ul`
 
 const BlogPostToc = ({ toc }) => {
   return (
-    <Aside
-      css={css`
-        grid-column: 2; // i need this to override * in blog template style
-      `}
-    >
+    <Aside>
       <h2>목차</h2>
       <List>
         {toc.items.map(item => (
