@@ -5,7 +5,29 @@ import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostListItem from "../components/organisms/post-list-item"
-import Divider from '../components/atoms/divider'
+import Divider from "../components/atoms/divider"
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
+      theme,
+    }) => theme.widths.aside} 1fr;
+
+  > * {
+    grid-column: 2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.widths.full}) {
+    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+  }
+`
+const Wrapper = styled.div`
+  padding: 0 ${props => props.theme.spacing[5]};
+
+  h1 {
+    margin-top: 0;
+  }
+`
 
 const PostList = styled.ol`
   list-style: none;
@@ -21,17 +43,21 @@ const Tags = ({ pageContext, data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title={tag} description={`${tag} 검색 결과`} />
 
-      <h1>{tagHeader}</h1>
-      <p>
-        <Link to="/">메인 페이지로 돌아가기</Link>
-      </p>
-      <Link to="/tags">모든 태그 보기</Link>
-      <Divider />
-      <PostList>
-        {edges.map(({ node }) => {
-          return <PostListItem post={node} />
-        })}
-      </PostList>
+      <Grid>
+        <Wrapper>
+          <h1>{tagHeader}</h1>
+          <p>
+            <Link to="/">메인 페이지로 돌아가기</Link>
+          </p>
+          <Link to="/tags">모든 태그 보기</Link>
+          <Divider />
+          <PostList>
+            {edges.map(({ node }) => {
+              return <PostListItem post={node} />
+            })}
+          </PostList>
+        </Wrapper>
+      </Grid>
     </Layout>
   )
 }

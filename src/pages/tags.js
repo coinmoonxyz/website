@@ -6,13 +6,36 @@ import { Link, graphql } from "gatsby"
 import styled from "@emotion/styled"
 import TagItem from "../components/molecules/tag-item"
 
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
+      theme,
+    }) => theme.widths.aside} 1fr;
+
+  > * {
+    grid-column: 2;
+  }
+
+  @media (max-width: ${({ theme }) => theme.widths.full}) {
+    grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
+  }
+`
+
+const Wrapper = styled.div`
+  padding: 0 ${props => props.theme.spacing[5]};
+
+  h1 {
+    margin-top: 0;
+  }
+`
+
 // can't reuse TagList organism component because of different graphql data structure
 const TagList = styled.ul`
   margin-top: ${props => props.theme.spacing[7]};
   margin-bottom: ${props => props.theme.spacing[4]};
   padding: 0;
   list-style-type: none;
-  font-size: ${props=>props.theme.fontSizes[2]};
+  font-size: ${props => props.theme.fontSizes[2]};
 
   li {
     margin-bottom: ${props => props.theme.spacing[6]};
@@ -31,21 +54,23 @@ const TagsPage = ({
 }) => (
   <Layout location={location} title={title}>
     <Seo title="모든 태그 보기" />
-    <div className="all-tags">
-      <h1>모든 태그 보기</h1>
-      <p>
-        <Link to="/">메인 페이지로 돌아가기</Link>
-      </p>
-      <TagList>
-        {group.map(tag => (
-          <TagItem
-            key={tag.fieldValue}
-            tag={tag.fieldValue}
-            count={tag.totalCount}
-          />
-        ))}
-      </TagList>
-    </div>
+    <Grid>
+      <Wrapper>
+        <h1>모든 태그 보기</h1>
+        <p>
+          <Link to="/">메인 페이지로 돌아가기</Link>
+        </p>
+        <TagList>
+          {group.map(tag => (
+            <TagItem
+              key={tag.fieldValue}
+              tag={tag.fieldValue}
+              count={tag.totalCount}
+            />
+          ))}
+        </TagList>
+      </Wrapper>
+    </Grid>
   </Layout>
 )
 
