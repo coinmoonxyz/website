@@ -12,12 +12,13 @@ const Description = styled.h2`
   margin: 0;
   margin-bottom: ${props => props.theme.spacing[3]};
   color: ${props => props.theme.colors.text};
-  font-size: ${props => props.theme.fontSizes[2]};
+  font-size: ${props => props.theme.fontSizes[3]};
   font-weight: ${props => props.theme.fontWeights.regular};
   line-height: ${props => props.theme.lineHeights.normal};
 `
 
 const Dates = styled.div`
+  font-size: ${props => props.theme.fontSizes[1]};
   display: flex;
   flex-direction: row;
   @media (max-width: ${props => props.theme.breakpoints[0]}) {
@@ -28,13 +29,12 @@ const Dates = styled.div`
 const Date = styled.div`
   margin-right: ${props => props.theme.spacing[3]};
   display: inline-block;
-  font-size: ${props => props.theme.fontSizes[1]};
   font-family: ${props => props.theme.fonts.sansSerif};
 `
 
 const DateUpdated = styled.div`
   color: ${props => props.theme.colors.textLight};
-  font-style: italic;
+  /* font-style: italic; */
 `
 
 const ArticleGrid = styled.article`

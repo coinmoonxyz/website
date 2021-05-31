@@ -9,7 +9,7 @@ import TagList from "../../components/organisms/tag-list"
 import BlogPostNav from "../../components/organisms/blog-post-nav"
 import BlogPostToc from "../../components/organisms/blog-post-toc"
 import Divider from "../../components/atoms/divider"
-import styled from "@emotion/styled"
+// import styled from "@emotion/styled"
 import * as S from "./styles"
 
 const Dates = ({ date, modifiedTime, updated }) => (
