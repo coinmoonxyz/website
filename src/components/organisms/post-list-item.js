@@ -5,7 +5,7 @@ import { css } from "@emotion/react"
 
 const Article = styled.article`
   margin-bottom: ${props => props.theme.spacing[7]};
-  margin-top: ${props => props.theme.spacing[7]};
+  /* margin-top: ${props => props.theme.spacing[7]}; */
 
   header {
     margin-bottom: ${props => props.theme.spacing[4]};

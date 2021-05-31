@@ -59,6 +59,8 @@ const Header = styled.header`
   padding-bottom: ${({ theme }) => theme.spacing[8]};
 
   grid-column: 2 / span 2;
+
+  /* background: ${({ theme }) => theme.colors.postHeaderBg}; */
 `
 
 const PostBody = styled.section`

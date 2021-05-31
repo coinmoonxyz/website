@@ -3,10 +3,14 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 const StyledHeader = styled.header`
-  margin-bottom: ${props => props.theme.spacing[9]};
+  padding: ${({ theme }) => theme.spacing[2]} 0;
+
+  height: 80px;
 
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
+
+  /* background: ${({ theme }) => theme.colors.siteHeaderBg}; */
 
   > * {
     grid-column: 2;
