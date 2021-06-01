@@ -1,12 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { css } from "@emotion/react"
+// import { css } from "@emotion/react"
 
 const StyledHeader = styled.header`
-  /* margin-bottom: ${({ theme }) => theme.spacing[7]}; */
-
-  height: 42px;
+  height: 40px;
 
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
@@ -29,6 +27,7 @@ const NestedGrid = styled.div`
   nav {
     grid-column: 2 / -1;
     align-self: center;
+    text-align: right;
 
     font-size: ${props => props.theme.fontSizes[1]};
   }

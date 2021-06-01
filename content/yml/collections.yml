@@ -1,0 +1,37 @@
+- name: "MIT 블록체인과 화폐 강의"
+  description: "SEC의장 개리 겐슬러 교수의 MIT 블록체인과 화폐 강의 모음"
+  slug: /mit-blockchain-and-money/
+  urls:
+    - /mit-blockchain-course-summary-1/
+    - /mit-money-ledgers-and-bitcoin-2/
+    - /mit-blockchain-basics-cryptography-3/
+    - /mit-blockchain-consensus-protocol-4/
+    - /mit-blockchain-transactions-utxo-scripting-5/
+    - /mit-smart-contracts-decentralized-apps-6/
+    - /mit-technical-challenges-7/
+    - /mit-public-policy-framework-8/
+    - /mit-permissioned-blockchain-9/
+    - /mit-financial-system-challenges-opportunities-10/
+    - /mit-blockchain-economics-11/
+    - /mit-assessing-use-cases-12/
+    - /mit-payment-system-part1-13/
+    - /mit-blockchain-payment-system-part2-14/
+    - /mit-central-bank-commercial-banking-15/
+    - /mit-central-bank-digital-currency-cbdc-16/
+    - /mit-secondary-markets-crypto-exchanges-17/
+    - /mit-ico-venture-capital-19/
+    - /mit-ico-regulation-20/
+    - /mit-clearing-settlement-processing-21/
+    - /mit-trade-finance-supply-chain-22/
+    - /mit-digital-identities-23/
+    - /mit-blockchain-conclusion-24/
+  featured: true
+- name: "코인 리워드받기"
+  description: "코인 리워드를 받을 수 있는 다양한 방법"
+  slug: /coin-rewards/
+  urls:
+    - /brave-browser-introduction/
+    - /coinbase-coin-rewards/
+    - /gemini-credit-card-with-bitcoin-rewards/
+    - /gemini-exchange/
+  featured: true

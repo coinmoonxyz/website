@@ -12,7 +12,7 @@ const theme = {
     text: "#2e353f",
     textLight: "#778191",
     tag: "#666",
-    siteHeaderBg: "#ece9de",
+    siteHeaderBg: "#d0e5e1",
     postHeaderBg: "rgb(222, 228, 210)",
   },
   fonts: {

@@ -1,11 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { css } from "@emotion/react"
+// import { css } from "@emotion/react"
 
 const Article = styled.article`
   margin-bottom: ${props => props.theme.spacing[7]};
-  /* margin-top: ${props => props.theme.spacing[7]}; */
 
   header {
     margin-bottom: ${props => props.theme.spacing[4]};

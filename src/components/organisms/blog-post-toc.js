@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
-import { css } from "@emotion/react"
+// import { css } from "@emotion/react"
 
 const Aside = styled.aside`
   margin-left: ${({ theme }) => theme.spacing[10]};
