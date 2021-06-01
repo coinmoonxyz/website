@@ -10,11 +10,11 @@ tags:
 
 미국의 가장 큰 온라인 결제 시스템 중 하나인 Paypal에서 암호화폐거래를 시작한데에 이어 페이팔이 소유하고 있는 Peer-to-peer 돈거래 앱 Venmo에서도 이제 암호화폐의 구매/판매/보유가 가능해졌습니다. 
 
-![Venmo opended crypto trading](0.jpg)
+![Venmo opended crypto trading](0.jpg "출처: venmo.com")
 
 Venmo의 모회사가 Paypal인지라 크게 놀랄만한 사실은 아니지만 그래도 젊은 세대들에게 훨씬 접근성이 높은 앱인 Venmo에서 1불 단위부터 암호화폐 거래가 가능해진다는 것은 암화화폐시장에 좋은 소식이 아닐수 없습니다. 일단은 모든 암호화폐가 아닌 딱 4가지 종류만 거래가 가능합니다. 종류가 적은만큼 여기 속한 코인들의 인기를 가늠해볼 수 있겠네요.
 
-![four different cryptocurrencies on Venmo](1.jpg)
+![four different cryptocurrencies on Venmo](1.jpg "출처: venmo.com")
 
 이렇게 비트코인, 이더리움, 비트코인캐쉬와 라이트코인이 먼저 제공되는 4가지 암호화폐들입니다. 
 
