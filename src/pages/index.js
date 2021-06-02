@@ -3,8 +3,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostListItem from "../components/organisms/post-list-item"
-import CollectionBox from "../components/organisms/collection-box"
+import CollectionListItem from "../components/organisms/collection-list-item"
 import styled from "@emotion/styled"
+// import RoundBox from '../components/atoms/round-box'
 
 const Grid = styled.div`
   padding-top: ${props => props.theme.spacing[5]};
@@ -76,8 +77,9 @@ const BlogIndex = ({ data, location }) => {
           </LatestSection>
           <CollectionSection>
             <h1>글 모음</h1>
-            <CollectionBox collection={collections[0]} />
-            <CollectionBox collection={collections[1]} />
+            {collections.map(collection => (
+              <CollectionListItem collection={collection} />
+            ))}
           </CollectionSection>
         </WrapperGrid>
       </Grid>
