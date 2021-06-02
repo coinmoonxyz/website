@@ -112,6 +112,6 @@ tags:
 래식교수가 수업 마지막에 학생의 질문에 답변한 부분이 인상적입니다. 스마트 컨트렉트가 명확하다고 하더라도 더 많은 자원을 가진 대기업들이 시간과 비용을 들여서 자신들이 원하는 방식으로 모든 조건들을 짜놓았다면 이런 문제는 법적으로 어떻게 대처하느냐는 질문에 아직 아무도 알 수 없고, 그렇기 때문에 앞으로 변호사들은 코드를 이해해야한다고 답변합니다. 지금까지 변호사들이 **글**로 표현된 법과 문서를 읽고 해석하는데에 공을 들인 것처럼, **코드**를 들여다보고 창의적으로 생각할 수 있어야한다고 말합니다. 저는 전적으로 동의하는 바입니다. 나아가서, 우리의 생활 전반적으로 디지털 기술의 영향이 점점 더 커지는 상황에서, 기본적인 기술에 대한 이해가 없다면 결국 손해보는 것은 기업이나 권력이 아니라 일반 시민들일 것이라고 생각합니다.
 
 ---
-현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **저의 부족한 지식으로 인해 사실과 다른 내용이 있을 수도 있고, 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다. [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JPkgJwJHYSc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

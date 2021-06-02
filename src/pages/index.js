@@ -110,8 +110,8 @@ export const pageQuery = graphql`
     }
     allCollectionsYaml {
       nodes {
-        name
-        description
+        title
+        subtitle
         slug
         urls
         featured

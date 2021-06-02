@@ -34,7 +34,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
         allCollectionsYaml {
           nodes {
-            name
+            title
+            subtitle
             description
             slug
             urls

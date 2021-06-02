@@ -42,15 +42,15 @@ const PostList = styled.ol`
 
 const CollectionTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { name, description, urls } = data.allCollectionsYaml.edges[0].node
+  const { title, subtitle, description, urls } = data.allCollectionsYaml.edges[0].node
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={name} description={description} />
+      <Seo title={title} description={subtitle} />
 
       <Grid>
         <Wrapper>
-          <h1>{name} 글 모음</h1>
+          <h1>{title} 글 모음</h1>
           <p>{description}</p>
           <p>
             <Link to="/">메인 페이지로 돌아가기</Link>
@@ -84,7 +84,8 @@ export const pageQuery = graphql`
     allCollectionsYaml(filter: { slug: { eq: $slug } }) {
       edges {
         node {
-          name
+          title
+          subtitle
           description
           urls
         }

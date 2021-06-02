@@ -1,5 +1,6 @@
-- name: "MIT 블록체인과 화폐 강의"
-  description: "SEC의장 개리 겐슬러 교수의 MIT 블록체인과 화폐 강의 모음"
+- title: "MIT 블록체인과 화폐 강의"
+  subtitle: "SEC의장 개리 겐슬러 교수의 MIT 블록체인과 화폐 강의 모음"
+  description: "미국 증권거래위원회(SEC) 의장 개리 겐슬러 교수가 2018년 MIT 블록체인과 화폐를 주제로 강의한 내용을 정리했습니다. 화폐의 기본적인 역할부터 블록체인 기술의 활용사례까지 차근차근 다루고 있습니다."
   slug: mit-blockchain-and-money
   urls:
     - /mit-blockchain-course-summary-1/
@@ -26,8 +27,9 @@
     - /mit-digital-identities-23/
     - /mit-blockchain-conclusion-24/
   featured: true
-- name: "코인 리워드받기"
-  description: "코인 리워드를 받을 수 있는 다양한 방법"
+- title: "코인 리워드"
+  subtitle: "코인 리워드를 받을 수 있는 다양한 방법"
+  description: "코인 리워드를 받을 수 있는 다양한 방법들을 모았습니다."
   slug: coin-rewards-how-to
   urls:
     - /brave-browser-introduction/

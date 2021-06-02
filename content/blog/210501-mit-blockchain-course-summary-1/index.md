@@ -14,7 +14,7 @@ tags:
 
 개리 겐슬러 교수가 전적으로 블록체인을 옹호하는 것은 아닙니다. 겐슬러 교수는 이전에 골드만 삭스에서 일을 했고, 미국 선물거래소(CFTC)의 규제위원으로 근무하기도 했었습니다. MIT Media Lab에서는 디지털 화페 사업의 어드바이저로 일하고 있기도 합니다. 그런 바탕에서도 알 수 있고 첫 강의에서도 말하듯이 블록체인에는 중립적인 태도를 보이고 있고, 비트코인 관련해서는 미니멀리스트 쪽에 있다고 합니다. 스마트 컨트렉트 관련해서는 중립적이라고 하구요. 좀 더 신중하고 비판적인 태도라고 볼 수 있겠네요. 글을 읽으시거나 영상을 보시는 분들도 이런 부분을 염두에 두시면 좋겠습니다.
 
-제 스스로의 지식을 좀 더 쌓고자 강의를 보고 스터디노트를 여기 남겨봅니다. 제가 기록한 내용은 무엇보다도 제 스스로의 공부를 위한 글입니다. **저의 부족한 지식으로 인해 사실과 다른 내용이 있을 수도 있고, 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 아래 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+제 스스로의 지식을 좀 더 쌓고자 강의를 보고 스터디노트를 여기 남겨봅니다. 제가 기록한 내용은 무엇보다도 제 스스로의 공부를 위한 글입니다. 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 아래 원본 강의 영상을 보시길 권합니다. [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EH6vE97qIP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

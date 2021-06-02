@@ -45,14 +45,14 @@ const Box = styled.article`
 `
 
 const CollectionBox = ({ collection }) => {
-  const { name, description, slug } = collection
+  const { title, subtitle, slug } = collection
   return (
     <Wrapper>
       <Link to={`collection/${slug}`}>
         <Box>
           {/* <div>글 모음</div> */}
-          <h2>{name}</h2>
-          <p>{description}</p>
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
         </Box>
       </Link>
     </Wrapper>

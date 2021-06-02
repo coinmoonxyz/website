@@ -88,6 +88,6 @@ tags:
 중앙은행은 경제에서 중요한 역할을 하고 있습니다. 온라인뱅킹, 크레딧카드의 사용 등에서 볼 수 있듯이 우리는 이미 전자화폐의 시대에 살고 있습니다. 기존의 지불시스템과 법정화폐는 여러 과제들을 안고 있는데 블록체인 기술이 변화의 촉매가 되고 있지만, 블록체인 프로젝트들이 변화의 선두에 서게 될지 촉매의 역할만 하게될지는 지켜봐야겠습니다. 중앙은행은 클립토금융시장을 주시하고 있고 지불시스템의 활용성을 연구하고 있습니다. 중앙은행 디지털화폐는 블록체인 기술에서 자극을 받았지만 블록체인 기술을 사용하지 않을 수도 있습니다. 그렇더라도 CBDC의 대중화가 이루어질 것이라고 예상해 볼수는 있습니다.
 
 ---
-현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **저의 부족한 지식으로 인해 사실과 다른 내용이 있을 수도 있고, 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다. [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uNqMBBbb6UI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
