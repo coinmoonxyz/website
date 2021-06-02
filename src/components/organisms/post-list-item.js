@@ -11,8 +11,8 @@ const PostListItem = ({ post }) => {
   if (tags) tags.sort()
 
   return (
-    <li key={post.fields.slug}>
-      <article itemScope itemType="http://schema.org/Article">
+    <li>
+      <article itemScope schema="https://schema.org/Article">
         <RoundBox bg={theme.colors.brightgray}>
           <Link to={post.fields.slug} itemProp="url">
             <header>

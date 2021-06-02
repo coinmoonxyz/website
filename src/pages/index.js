@@ -4,11 +4,13 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import PostListItem from "../components/organisms/post-list-item"
 import CollectionListItem from "../components/organisms/collection-list-item"
+import RoundBoxItem from "../components/organisms/round-box-item"
 import styled from "@emotion/styled"
 // import RoundBox from '../components/atoms/round-box'
 
 const Grid = styled.div`
   padding-top: ${props => props.theme.spacing[5]};
+
   display: grid;
   grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
 
@@ -52,7 +54,7 @@ const CollectionSection = styled.section`
   }
 `
 
-const PostList = styled.ol`
+const OrderedList = styled.ol`
   list-style: none;
 `
 
@@ -69,17 +71,21 @@ const BlogIndex = ({ data, location }) => {
         <WrapperGrid>
           <LatestSection>
             <h1>최신 글</h1>
-            <PostList>
+            <OrderedList>
               {posts.map(post => (
                 <PostListItem post={post} key={post.id} />
               ))}
-            </PostList>
+              <RoundBoxItem slug={"/all-posts/"} short>모든 글 보기 →</RoundBoxItem>
+            </OrderedList>
           </LatestSection>
           <CollectionSection>
             <h1>글 모음</h1>
-            {collections.map(collection => (
-              <CollectionListItem collection={collection} />
-            ))}
+            <OrderedList>
+              {collections.map(collection => (
+                <CollectionListItem collection={collection} />
+              ))}
+              {/* <RoundBoxItem title={"모든 글 모음 보기 →"} slug={"/all-posts/"} /> */}
+            </OrderedList>
           </CollectionSection>
         </WrapperGrid>
       </Grid>
@@ -96,7 +102,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 8) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 6) {
       nodes {
         id
         excerpt

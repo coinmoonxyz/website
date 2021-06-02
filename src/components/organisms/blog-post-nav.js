@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
+import RoundBoxItem from "./round-box-item"
 
 const Nav = styled.nav`
   margin-bottom: ${props => props.theme.spacing[9]};
@@ -22,9 +23,22 @@ const StyledList = styled.ul`
   padding: 0 ${props => props.theme.spacing[5]};
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0 ${({ theme }) => theme.spacing[6]};
+
   list-style: none;
+
+  li {
+    display: flex;
+  }
+
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
+    flex-wrap: wrap;
+
+    li {
+      flex: 1 1 auto;
+    }
+  }
 `
 
 const BlogPostNav = ({ previous, next }) => {
@@ -33,16 +47,16 @@ const BlogPostNav = ({ previous, next }) => {
       <StyledList>
         <li>
           {previous && (
-            <Link to={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
+            <RoundBoxItem slug={previous.fields.slug} short rel="prev">
+              ← 이전 글: {previous.frontmatter.title}{" "}
+            </RoundBoxItem>
           )}
         </li>
-        <li>
+        <li style={{textAlign: "right"}}>
           {next && (
-            <Link to={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </Link>
+            <RoundBoxItem slug={next.fields.slug} short rel="next">
+              다음 글: {next.frontmatter.title} →
+            </RoundBoxItem>
           )}
         </li>
       </StyledList>
