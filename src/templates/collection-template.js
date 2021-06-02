@@ -6,6 +6,12 @@ import PostListItem from "../components/organisms/post-list-item"
 import Divider from "../components/atoms/divider"
 import styled from "@emotion/styled"
 
+/**
+ * filter by collection urls to get the post data I need.
+ * the current method may be too slow as it has to compare the whole MDX array.
+ * if there's a way to filter within GraphQL query, that might be better in the future.
+ */
+
 const Grid = styled.div`
   padding-top: ${props => props.theme.spacing[5]};
 
@@ -40,11 +46,11 @@ const CollectionTemplate = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title={"PAGE TITLE"} description={`DESCRIPTION`} />
+      <Seo title={name} description={description} />
 
       <Grid>
         <Wrapper>
-          <h1>{name}</h1>
+          <h1>{name} 글 모음</h1>
           <p>{description}</p>
           <p>
             <Link to="/">메인 페이지로 돌아가기</Link>
@@ -52,23 +58,11 @@ const CollectionTemplate = ({ data, location }) => {
           <Divider />
           <PostList>
             {urls.map(url => {
-              return (
-                <li key={url}>
-                  <article itemScope itemType="http://schema.org/Article">
-                    {/* <Link to={post.fields.slug} itemProp="url">
-                      <header>
-                        <h2>
-                          <span itemProp="headline">{title}</span>
-                        </h2>
-                        <p itemProp="description">
-                          {post.frontmatter.description || post.excerpt}
-                        </p>
-                        <small>{post.frontmatter.date}</small>
-                      </header>
-                    </Link> */}
-                  </article>
-                </li>
-              )
+              const post = data.allMdx.nodes.filter(
+                ({ fields: { slug } }) => slug === url
+              )[0]
+
+              return <PostListItem post={post} key={post.id} />
             })}
           </PostList>
         </Wrapper>
@@ -86,12 +80,28 @@ export const pageQuery = graphql`
         title
       }
     }
+
     allCollectionsYaml(filter: { slug: { eq: $slug } }) {
       edges {
         node {
           name
           description
           urls
+        }
+      }
+    }
+
+    allMdx(sort: { fields: [frontmatter___date], order: ASC }, limit: 1000) {
+      nodes {
+        frontmatter {
+          title
+          date(formatString: "MMMM DD, YYYY")
+          description
+        }
+        id
+        excerpt
+        fields {
+          slug
         }
       }
     }

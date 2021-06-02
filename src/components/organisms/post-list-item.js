@@ -9,6 +9,8 @@ const Article = styled.article`
   /* border: 1px solid ${({ theme }) => theme.colors.accent}; */
   border-radius: ${({ theme }) => theme.spacing[3]};
 
+  background: ${({ theme }) => theme.colors.brightgray};
+
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.4s;
 

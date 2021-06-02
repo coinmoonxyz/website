@@ -2,7 +2,9 @@ const theme = {
   breakpoints: ["42rem", "64rem"],
   colors: {
     gray: "#666",
+    white: "#f9f9f9",
     lightgray: "#aaa",
+    brightgray: "#f6f6f0",
     accent: "#d1dce5",
     heading: "#1a202c",
     headingBlack: "black",
@@ -15,6 +17,7 @@ const theme = {
     bodyBg: "rgb(240, 240, 236)",
     siteHeaderBg: "#d0e5e1",
     postHeaderBg: "rgb(200, 228, 200)",
+    collectionBg: "rgb(240, 140, 236)",
   },
   fonts: {
     sansSerif:

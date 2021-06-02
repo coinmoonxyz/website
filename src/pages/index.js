@@ -74,11 +74,11 @@ const BlogIndex = ({ data, location }) => {
               ))}
             </PostList>
           </LatestSection>
-          {/* <CollectionSection>
+          <CollectionSection>
             <h1>글 모음</h1>
             <CollectionBox collection={collections[0]} />
             <CollectionBox collection={collections[1]} />
-          </CollectionSection> */}
+          </CollectionSection>
         </WrapperGrid>
       </Grid>
     </Layout>
@@ -105,7 +105,6 @@ export const pageQuery = graphql`
           date(formatString: "MMMM D, YYYY")
           title
           description
-          tags
         }
       }
     }

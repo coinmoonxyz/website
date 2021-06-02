@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   /* border: 1px solid ${({ theme }) => theme.colors.accent}; */
   border-radius: ${({ theme }) => theme.spacing[3]};
 
-  background: ${({ theme }) => theme.colors.accent};
+  background: ${({ theme }) => theme.colors.white};
 
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.4s;

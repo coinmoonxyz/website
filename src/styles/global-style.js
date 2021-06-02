@@ -83,6 +83,8 @@ const GlobalStyle = props => (
       }
 
       h1,
+      h2,
+      h3
       p,
       li {
         word-break: keep-all;

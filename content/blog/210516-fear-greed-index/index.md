@@ -5,7 +5,7 @@ date: "2021-05-16T19:30:00Z"
 author: 코인문
 tags: 
 - 코인
-- 비트코인
+- $BTC
 ---
 
 <img src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" style="width: 100%;"/>

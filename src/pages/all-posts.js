@@ -9,7 +9,9 @@ const Grid = styled.div`
   padding-top: ${props => props.theme.spacing[5]};
   
   display: grid;
-  grid-template-columns: 1fr min(${({ theme }) => theme.widths.full}, 100%) 1fr;
+  grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) ${({
+      theme,
+    }) => theme.widths.aside} 1fr;
 
   > * {
     grid-column: 2;
