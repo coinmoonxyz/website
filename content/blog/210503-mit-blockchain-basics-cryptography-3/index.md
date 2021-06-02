@@ -11,10 +11,6 @@ tags:
 - 공부하기
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0UvVOMZqpEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
 비트코인은 블록체인 기술의 첫 활용사례입니다. 금융과 공공부문에서 평생을 일해온 교수가 기술과 과학 중심의  MIT에서 블록체인을 강의하는 것이 의미가 있네요. 이 수업 자체는 MIT Sloan School of Management 경영대학에서 제공하고 있습니다. 수업을 직접 듣는 학생들에게는 컴퓨터 공학 분야의 전문가들과도 연결해줄 모양입니다. 특히, 오늘 강의는 비트코인의 기술적인 부분에 대한 내용입니다. 블록체인을 직접 만들거나 코드를 작성하지는 못하더라도 (그럴 필요가 없더라도) 이 기술이 무엇인지를 이해하는 것은 요즘같이 부풀린 말들이 오가는 상황에서 특히나 더 중요하겠습니다.
 
 ## 스터디 질문
@@ -150,3 +146,5 @@ Bob이 Alice에게 "Hello Alice!"라는 문자를 암호화해서 보내려고 �
 
 ---
 현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **저의 부족한 지식으로 인해 사실과 다른 내용이 있을 수도 있고, 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0UvVOMZqpEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

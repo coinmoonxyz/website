@@ -9,10 +9,6 @@ tags:
 - 공부하기
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sMnBl0g3Ev4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
 ## 스터디 질문
 - 불법행위를 막고, 재정적 안정을 확보하고 투자자를 보호하는 등의 핵심적인 공공정책 프레임워크는 어떻게 블록체인 기술과 크립토 금융과 연결되어있을까요?
 - 암호토큰이 재산으로 여겨진다면 또는 화폐, 가치, 투자계약, 상품 등으로 여겨진다면 세법, 은행비밀법, 증권과 상품법과 어떤 연관이 있을까요? 미국 대법원의 ['하우이 테스트(Howey Test)'](https://www.investopedia.com/terms/h/howey-test.asp)의 핵심은 무엇인가요?
@@ -120,3 +116,5 @@ tags:
 
 ---
 현재 바이든 정부의 SEC 의장 개리 겐슬러 교수가 MIT에서 2018년에 블록체인과 화폐를 주제로 수업한 내용을 정리하고 있습니다. 이 요약노트는 무엇보다도 제 스스로의 공부를 위한 글입니다. **저의 부족한 지식으로 인해 사실과 다른 내용이 있을 수도 있고, 강의 내용 이외에도 제 생각들을 덧붙였기 때문에 강의 자체에 관심이 있는 분들은 원본 강의 영상을 보시길 권합니다.** [강의 웹사이트](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/video-lectures/)에도 영상, 리딩 등이 잘 정리되어있습니다. 강의는 [CC BY-NC-SA 라이센스](https://creativecommons.org/licenses/by-nc-sa/4.0/)로 공개되어 있습니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sMnBl0g3Ev4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

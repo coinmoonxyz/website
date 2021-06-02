@@ -25,7 +25,7 @@ const WrapperGrid = styled.div`
 
   display: grid;
   grid-template-columns: 4fr 2fr;
-  grid-gap: ${({ theme }) => theme.spacing[10]};
+  grid-gap: ${({ theme }) => theme.spacing[8]};
 
   @media (max-width: ${({ theme }) => theme.widths.main}) {
     grid-template-columns: 100%;
