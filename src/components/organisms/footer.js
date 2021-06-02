@@ -22,7 +22,7 @@ const FooterStyled = styled.footer`
     color: ${props => props.theme.colors.gray};
   }
 
-  @media (max-width: ${({ theme }) => theme.widths.full}) {
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
     grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
   }
 `

@@ -25,7 +25,7 @@ const GlobalStyle = props => (
       body {
         font-family: ${theme.fonts.sansSerif};
         font-size: ${theme.fontSizes[2]};
-        background: rgb(240, 240, 236);
+        background: ${theme.colors.bodyBg};
         color: ${theme.colors.text};
       }
 
@@ -49,7 +49,8 @@ const GlobalStyle = props => (
       h6 {
         font-family: ${theme.fonts.sansSerif};
         font-weight: ${theme.fontWeights.regular};
-        margin-top: ${theme.spacing[9]};
+        /* margin-top: ${theme.spacing[9]}; */
+        margin-top: 0;
         margin-bottom: ${theme.spacing[6]};
         line-height: ${theme.lineHeights.tight};
         letter-spacing: 0;

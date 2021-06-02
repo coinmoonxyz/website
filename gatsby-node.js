@@ -5,25 +5,12 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
-  // Define a template for blog post
+  // Define a template for each type of content
   const blogPostTemplate = path.resolve(`./src/templates/blog-post/index.js`)
-  // tag page template
-  const tagTemplate = path.resolve(`./src/templates/tag.js`)
+  const tagTemplate = path.resolve(`./src/templates/tag-template.js`)
+  const collectionTemplate = path.resolve(`./src/templates/collection-template.js`)
 
   // Get all markdown blog posts sorted by date
-
-  // allMarkdownRemark(
-  //   sort: { fields: [frontmatter___date], order: ASC }
-  //   limit: 1000
-  // ) {
-  //   nodes {
-  //     id
-  //     fields {
-  //       slug
-  //     }
-  //   }
-  // }
-
   const result = await graphql(
     `
       {
@@ -44,6 +31,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fieldValue
           }
         }
+
+        allCollectionsYaml {
+          nodes {
+            name
+            description
+            slug
+            urls
+          }
+        }
       }
     `
   )
@@ -57,12 +53,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   const posts = result.data.allMdx.nodes
-
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostId = index === 0 ? null : posts[index - 1].id
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
       createPage({
         path: post.fields.slug,
         component: blogPostTemplate,
@@ -77,36 +71,35 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // https://www.gatsbyjs.com/docs/adding-tags-and-categories-to-blog-posts/
   const tags = result.data.tagsGroup.group
-
   // Make tag pages
-  tags.forEach(tag => {
-    createPage({
-      path: `/tag/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
+  if (tags.length > 0) {
+    tags.forEach(tag => {
+      createPage({
+        path: `/tag/${_.kebabCase(tag.fieldValue)}/`,
+        component: tagTemplate,
+        context: {
+          tag: tag.fieldValue,
+        },
+      })
     })
-  })
+  }
+
+  const collections = result.data.allCollectionsYaml.nodes
+  if (collections.length > 0) {
+    collections.forEach(collection => {
+      createPage({
+        path: `/collection/${collection.slug}/`,
+        component: collectionTemplate,
+        context: {
+          slug: collection.slug,
+        }
+      })
+    })
+  }
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-
-  // if (node.internal.type === `MarkdownRemark`) {
-  //   const value = createFilePath({ node, getNode })
-
-  //   // reformat folder name for slug (remove date portion)
-  //   const words = value.split("-")
-  //   words.shift() // remove first element
-  //   const newv = "/" + words.join("-")
-
-  //   createNodeField({
-  //     name: `slug`,
-  //     node,
-  //     value: newv,
-  //   })
-  // }
 
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })

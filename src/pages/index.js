@@ -15,13 +15,40 @@ const Grid = styled.div`
     grid-column: 2;
   }
 
-  @media (max-width: ${({ theme }) => theme.widths.full}) {
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
     grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
   }
 `
 
-const Wrapper = styled.div`
+const WrapperGrid = styled.div`
   padding: 0 ${props => props.theme.spacing[5]};
+
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-gap: ${({ theme }) => theme.spacing[10]};
+
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
+    grid-template-columns: 100%;
+  }
+`
+
+const LatestSection = styled.section`
+  grid-column: 1;
+  grid-row: 1;
+
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
+    grid-row: 1;
+  }
+`
+
+const CollectionSection = styled.section`
+  grid-column: 2;
+  grid-row: 1;
+
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
+    grid-column: 1;
+    grid-row: 2;
+  }
 `
 
 const PostList = styled.ol`
@@ -38,15 +65,21 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="코인 가이드" />
       <Grid>
-        <Wrapper>
-          {/* <CollectionBox collection={collections[0]} gridColumn="1 / 2" />
-          <CollectionBox collection={collections[1]} gridColumn="1 / 2" /> */}
-          <PostList>
-            {posts.map(post => (
-              <PostListItem post={post} key={post.id} />
-            ))}
-          </PostList>
-        </Wrapper>
+        <WrapperGrid>
+          <LatestSection>
+            <h1>최신 글</h1>
+            <PostList>
+              {posts.map(post => (
+                <PostListItem post={post} key={post.id} />
+              ))}
+            </PostList>
+          </LatestSection>
+          {/* <CollectionSection>
+            <h1>글 모음</h1>
+            <CollectionBox collection={collections[0]} />
+            <CollectionBox collection={collections[1]} />
+          </CollectionSection> */}
+        </WrapperGrid>
       </Grid>
     </Layout>
   )
@@ -61,7 +94,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 8) {
       nodes {
         id
         excerpt

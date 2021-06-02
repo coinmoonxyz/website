@@ -42,7 +42,7 @@ const AllPosts = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="코인 가이드" />
+      <Seo title="모든 글 보기" />
       <Grid>
         <Wrapper>
           <h1>모든 글 보기</h1>

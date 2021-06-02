@@ -12,8 +12,9 @@ const theme = {
     text: "#2e353f",
     textLight: "#778191",
     tag: "#666",
+    bodyBg: "rgb(240, 240, 236)",
     siteHeaderBg: "#d0e5e1",
-    postHeaderBg: "rgb(222, 228, 210)",
+    postHeaderBg: "rgb(200, 228, 200)",
   },
   fonts: {
     sansSerif:

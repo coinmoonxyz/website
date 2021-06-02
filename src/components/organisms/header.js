@@ -11,11 +11,13 @@ const StyledHeader = styled.header`
 
   background: ${({ theme }) => theme.colors.siteHeaderBg};
 
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+
   > * {
     grid-column: 2;
   }
 
-  @media (max-width: ${({ theme }) => theme.widths.full}) {
+  @media (max-width: ${({ theme }) => theme.widths.main}) {
     grid-template-columns: 1fr min(${({ theme }) => theme.widths.main}, 100%) 1fr;
   }
 `
