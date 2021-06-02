@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 // import { css } from "@emotion/react"
 
 const Article = styled.article`
-  margin-bottom: ${props => props.theme.spacing[7]};
+  margin-bottom: ${props => props.theme.spacing[5]};
 
   /* border: 1px solid ${({ theme }) => theme.colors.accent}; */
   border-radius: ${({ theme }) => theme.spacing[3]};
@@ -58,7 +58,7 @@ const PostListItem = ({ post }) => {
             <p itemProp="description">
               {post.frontmatter.description || post.excerpt}
             </p>
-            <small>{post.frontmatter.date}</small>
+            {post.frontmatter.date && <small>{post.frontmatter.date}</small>}
           </header>
         </Link>
       </Article>

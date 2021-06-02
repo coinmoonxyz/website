@@ -5,14 +5,14 @@ import styled from "@emotion/styled"
 import { grid } from "styled-system"
 
 const Wrapper = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacing[7]};
+  margin-bottom: ${({ theme }) => theme.spacing[5]};
   /* border: 1px solid ${({ theme }) => theme.colors.accent}; */
   border-radius: ${({ theme }) => theme.spacing[3]};
 
   background: ${({ theme }) => theme.colors.white};
 
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, background 0.3s;
 
   &:hover {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
