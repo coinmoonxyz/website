@@ -65,6 +65,7 @@ const theme = {
     main: "720px",
     full: "1100px",
     aside: "380px", // full - main
+    small: "480px",
   },
 }
 

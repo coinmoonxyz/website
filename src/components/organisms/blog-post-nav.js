@@ -31,12 +31,17 @@ const StyledList = styled.ul`
   li {
     display: flex;
   }
+  li:last-child {
+    text-align: right;
+  }
 
-  @media (max-width: ${({ theme }) => theme.widths.main}) {
+  @media (max-width: ${({ theme }) => theme.widths.small}) {
     flex-wrap: wrap;
+    /* display: block; */
 
     li {
       flex: 1 1 auto;
+      display: block;
     }
   }
 `
@@ -52,7 +57,7 @@ const BlogPostNav = ({ previous, next }) => {
             </RoundBoxItem>
           )}
         </li>
-        <li style={{textAlign: "right"}}>
+        <li>
           {next && (
             <RoundBoxItem slug={next.fields.slug} short rel="next">
               다음 글: {next.frontmatter.title} →
