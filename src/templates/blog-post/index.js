@@ -17,7 +17,7 @@ const Dates = ({ date, modifiedTime, updated }) => (
     <S.Date>{moment(new Date(date)).format("dddd MMM Do, YYYY")}</S.Date>
     {updated && (
       <S.DateUpdated>
-        last update: {moment(new Date(modifiedTime)).format("MMM Do")}
+        last update: {moment(new Date(modifiedTime)).format("MMM Do, YYYY")}
       </S.DateUpdated>
     )}
   </S.Dates>
