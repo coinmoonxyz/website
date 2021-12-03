@@ -1,7 +1,7 @@
 ---
-title: IPFS와 파일코인을 간단하게 소개합니다.
-description: 대형거래소에서 다루지 않는 신생코인을 살 수 있는 거래소를 추천합니다.
-date: "2021-12-03T02:30:00Z"
+title: IPFS와 파일코인을 간단하게 소개합니다
+description: 웹3의 대표적인 파일저장방식인 IPFS와 Filecoin에 대해 알아봅시다.
+date: "2021-12-03T20:30:00Z"
 author: 코인별
 tags:
 - 코인
