@@ -1,5 +1,5 @@
 ---
-title: IPFS와 파일코인을 간단하게 소개합니다
+title: IPFS와 파일코인 소개
 description: 웹3의 대표적인 파일저장방식인 IPFS와 Filecoin에 대해 알아봅시다.
 date: "2021-12-03T20:30:00Z"
 author: 코인별
